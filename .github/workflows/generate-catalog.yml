@@ -11,7 +11,7 @@ permissions:
 jobs:
   generate-catalog:
     runs-on: ubuntu-latest
-    if: contains(github.event.issue.labels.*.name, 'cafe') || (github.event.action == 'unlabeled' && github.event.label.name == 'cafe')
+    if: (contains(github.event.issue.labels.*.name, 'cafe') || (github.event.action == 'unlabeled' && github.event.label.name == 'cafe')) && github.actor == 'soker90'
     
     steps:
     - name: Checkout repository
