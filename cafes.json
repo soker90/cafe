@@ -1,5 +1,28 @@
 [
   {
+    "name": "Randall",
+    "origin": "Etiopía",
+    "region": "Bombe, Sidamo",
+    "roaster": "Randall",
+    "price": null,
+    "rating": null,
+    "purchaseDate": "2023-01-01",
+    "process": "Natural",
+    "variety": "Heirloom",
+    "altitude": 2230,
+    "flavorNotes": [
+      "Vainilla",
+      "Canela",
+      "Fruta de la pasión"
+    ],
+    "packageImage": "https://github.com/user-attachments/assets/44b5385e-2ab0-4e55-b391-64740d5658f4",
+    "notes": null,
+    "issueNumber": 9,
+    "issueTitle": "[CAFÉ] Randall bombe",
+    "createdAt": "2025-10-03T23:31:37Z",
+    "updatedAt": "2025-10-03T23:31:37Z"
+  },
+  {
     "name": "La noria coffee project",
     "origin": "Colombia",
     "region": null,
@@ -7,7 +30,7 @@
     "price": null,
     "rating": null,
     "purchaseDate": "2023-01-01",
-    "process": "Red Honey",
+    "process": "Honey",
     "variety": "Castillo",
     "altitude": null,
     "flavorNotes": [
