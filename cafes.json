@@ -1,5 +1,29 @@
 [
   {
+    "name": "Villamaria",
+    "origin": "Colombia",
+    "region": "Caldas",
+    "roaster": "The fix",
+    "price": null,
+    "rating": null,
+    "purchaseDate": "2023-01-01",
+    "process": "Natural",
+    "variety": "Colombia, Castillo, Caturra",
+    "altitude": 1900,
+    "flavorNotes": [
+      "Algodón de azucar",
+      "uva negra",
+      "ron",
+      "floral"
+    ],
+    "packageImage": "https://github.com/user-attachments/assets/2d7c7328-ae54-4cb3-8b6d-c6c8db29b7d6",
+    "notes": null,
+    "issueNumber": 7,
+    "issueTitle": "[CAFÉ] The fix Colombia Caldas",
+    "createdAt": "2025-10-03T23:09:44Z",
+    "updatedAt": "2025-10-03T23:09:44Z"
+  },
+  {
     "name": "Colombia La esmeralda",
     "origin": "Colombia",
     "region": "Acevedo, Huila",
