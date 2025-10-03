@@ -4,6 +4,10 @@ on:
   issues:
     types: [opened, edited, closed, reopened, labeled, unlabeled]
 
+permissions:
+  contents: write
+  issues: read
+
 jobs:
   generate-catalog:
     runs-on: ubuntu-latest
