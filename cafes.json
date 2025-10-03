@@ -1,0 +1,24 @@
+[
+  {
+    "name": "Café de Colombia Premium",
+    "origin": "Colombia, Huila",
+    "roaster": "Café Central",
+    "price": 12.50,
+    "rating": 4,
+    "purchaseDate": "2024-03-15",
+    "image": null,
+    "notes": "Café con notas a chocolate y frutas rojas, cuerpo medio y acidez balanceada. Perfecto para método V60.",
+    "issueNumber": 1
+  },
+  {
+    "name": "Geisha Panama",
+    "origin": "Panamá, Boquete",
+    "roaster": "Third Wave Coffee",
+    "price": 28.00,
+    "rating": 5,
+    "purchaseDate": "2024-03-20",
+    "image": null,
+    "notes": "Café excepcional con notas florales y de té blanco. Muy aromático y con una acidez brillante.",
+    "issueNumber": 2
+  }
+]

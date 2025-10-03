@@ -1,0 +1,129 @@
+name: Generate Coffee Catalog
+
+on:
+  issues:
+    types: [opened, edited, closed, reopened, labeled, unlabeled]
+
+jobs:
+  generate-catalog:
+    runs-on: ubuntu-latest
+    if: contains(github.event.issue.labels.*.name, 'cafe')
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        
+    - name: Generate cafes.json from issues
+      uses: actions/github-script@v7
+      with:
+        script: |
+          const fs = require('fs');
+          
+          // Función para extraer información del issue
+          function parseIssueBody(body) {
+            const coffee = {
+              name: null,
+              origin: null,
+              roaster: null,
+              price: null,
+              rating: null,
+              purchaseDate: null,
+              image: null,
+              notes: null
+            };
+            
+            if (!body) return coffee;
+            
+            // Extraer campos usando regex
+            const patterns = {
+              name: /\*\*Nombre:\*\*\s*(.+)/i,
+              origin: /\*\*Origen:\*\*\s*(.+)/i,
+              roaster: /\*\*Tostador:\*\*\s*(.+)/i,
+              price: /\*\*Precio:\*\*\s*([0-9.,]+)/i,
+              rating: /\*\*Puntuación:\*\*\s*([1-5])/i,
+              purchaseDate: /\*\*Fecha de compra:\*\*\s*(\d{4}-\d{2}-\d{2})/i,
+              image: /\*\*Imagen:\*\*\s*(https?:\/\/[^\s]+)/i,
+              notes: /\*\*Notas:\*\*\s*(.+?)(?=\*\*|$)/is
+            };
+            
+            for (const [key, pattern] of Object.entries(patterns)) {
+              const match = body.match(pattern);
+              if (match) {
+                let value = match[1].trim();
+                
+                // Procesar valores específicos
+                if (key === 'price') {
+                  value = parseFloat(value.replace(',', '.'));
+                } else if (key === 'rating') {
+                  value = parseInt(value);
+                } else if (key === 'notes') {
+                  // Limpiar saltos de línea extra
+                  value = value.replace(/\n+/g, ' ').trim();
+                }
+                
+                coffee[key] = value;
+              }
+            }
+            
+            return coffee;
+          }
+          
+          try {
+            // Obtener todos los issues abiertos con label 'cafe'
+            const { data: issues } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              labels: 'cafe',
+              state: 'open',
+              per_page: 100
+            });
+            
+            console.log(`Found ${issues.length} coffee issues`);
+            
+            // Convertir issues a cafés
+            const coffees = issues.map(issue => {
+              const coffee = parseIssueBody(issue.body);
+              coffee.issueNumber = issue.number;
+              coffee.issueTitle = issue.title;
+              coffee.createdAt = issue.created_at;
+              coffee.updatedAt = issue.updated_at;
+              
+              // Si no hay nombre, usar el título del issue
+              if (!coffee.name) {
+                coffee.name = issue.title;
+              }
+              
+              return coffee;
+            }).filter(coffee => coffee.name); // Solo cafés con nombre
+            
+            // Ordenar por fecha de creación (más recientes primero)
+            coffees.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
+            
+            // Escribir archivo JSON
+            const jsonContent = JSON.stringify(coffees, null, 2);
+            fs.writeFileSync('cafes.json', jsonContent);
+            
+            console.log(`Generated cafes.json with ${coffees.length} coffees`);
+            console.log('Coffees:', coffees.map(c => c.name));
+            
+          } catch (error) {
+            console.error('Error generating catalog:', error);
+            process.exit(1);
+          }
+          
+    - name: Commit and push changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add cafes.json
+        if git diff --staged --quiet; then
+          echo "No changes to commit"
+        else
+          git commit -m "Update coffee catalog from issues"
+          git push
+        fi

@@ -31,138 +31,6 @@
             text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
         }
 
-        .login-section {
-            background: white;
-            padding: 40px;
-            border-radius: 20px;
-            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
-            text-align: center;
-            max-width: 500px;
-            margin: 0 auto;
-        }
-
-        .login-section h2 {
-            color: #8B4513;
-            margin-bottom: 20px;
-        }
-
-        .login-section p {
-            color: #666;
-            margin-bottom: 30px;
-            line-height: 1.5;
-        }
-
-        .github-login-btn {
-            background: #333;
-            color: white;
-            border: none;
-            padding: 15px 30px;
-            border-radius: 10px;
-            font-size: 18px;
-            font-weight: bold;
-            cursor: pointer;
-            transition: all 0.3s;
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            text-decoration: none;
-        }
-
-        .github-login-btn:hover {
-            background: #555;
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-        }
-
-        .user-info {
-            background: rgba(255,255,255,0.95);
-            padding: 20px;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-            margin-bottom: 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 15px;
-        }
-
-        .user-details {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-
-        .user-avatar {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-        }
-
-        .user-name {
-            color: #8B4513;
-            font-weight: bold;
-            font-size: 18px;
-        }
-
-        .repo-selector {
-            background: rgba(255,255,255,0.95);
-            padding: 20px;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-            margin-bottom: 20px;
-        }
-
-        .repo-selector h3 {
-            color: #8B4513;
-            margin-bottom: 15px;
-        }
-
-        .repo-options {
-            display: grid;
-            grid-template-columns: 1fr auto;
-            gap: 15px;
-            align-items: end;
-        }
-
-        .add-form {
-            background: white;
-            padding: 25px;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-            margin-bottom: 30px;
-        }
-
-        .form-group {
-            margin-bottom: 15px;
-        }
-
-        label {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: bold;
-            color: #8B4513;
-        }
-
-        input, textarea, select {
-            width: 100%;
-            padding: 12px;
-            border: 2px solid #ddd;
-            border-radius: 8px;
-            font-size: 16px;
-            transition: border-color 0.3s;
-        }
-
-        input:focus, textarea:focus, select:focus {
-            outline: none;
-            border-color: #8B4513;
-        }
-
-        textarea {
-            resize: vertical;
-            min-height: 100px;
-        }
-
         button {
             background: linear-gradient(135deg, #8B4513 0%, #D2691E 100%);
             color: white;
@@ -184,12 +52,6 @@
             opacity: 0.6;
             cursor: not-allowed;
             transform: none;
-        }
-
-        .logout-btn {
-            background: #dc3545;
-            padding: 10px 20px;
-            font-size: 14px;
         }
 
         .coffee-grid {
@@ -291,12 +153,6 @@
             margin-top: 50px;
         }
 
-        .form-row {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 15px;
-        }
-
         .instructions {
             background: rgba(255,255,255,0.9);
             padding: 20px;
@@ -310,19 +166,18 @@
             margin-bottom: 10px;
         }
 
-        .hidden {
-            display: none !important;
+        .instructions pre {
+            background: #f5f5f5;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            overflow-x: auto;
+            font-size: 14px;
+            line-height: 1.4;
         }
 
-        @media (max-width: 768px) {
-            .form-row, .repo-options {
-                grid-template-columns: 1fr;
-            }
-            
-            .user-info {
-                flex-direction: column;
-                text-align: center;
-            }
+        .hidden {
+            display: none !important;
         }
     </style>
 </head>
@@ -330,46 +185,26 @@
     <div class="container">
         <h1>☕ Mi Catálogo de Cafés</h1>
 
-        <!-- Sección de login -->
-        <div id="loginSection" class="login-section">
-            <h2>🔐 Accede con GitHub</h2>
-            <p>Inicia sesión con tu cuenta de GitHub para guardar tu catálogo de cafés automáticamente en un repositorio.</p>
-            <button class="github-login-btn" onclick="loginWithGitHub()">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 0C5.374 0 0 5.373 0 12 0 17.302 3.438 21.8 8.207 23.387c.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
-                </svg>
-                Iniciar sesión con GitHub
-            </button>
-        </div>
-
-        <!-- Información del usuario -->
-        <div id="userInfo" class="user-info hidden">
-            <div class="user-details">
-                <img id="userAvatar" class="user-avatar" src="" alt="Avatar">
-                <div>
-                    <div id="userName" class="user-name"></div>
-                    <div id="userLogin" style="color: #666;"></div>
-                </div>
-            </div>
-            <button class="logout-btn" onclick="logout()">🚪 Cerrar sesión</button>
-        </div>
-
-        <!-- Selector de repositorio -->
-        <div id="repoSelector" class="repo-selector hidden">
-            <h3>📁 Seleccionar Repositorio</h3>
-            <div class="repo-options">
-                <div class="form-group" style="margin-bottom: 0;">
-                    <select id="repoSelect">
-                        <option value="">Cargando repositorios...</option>
-                    </select>
-                </div>
-                <button onclick="selectRepository()">📂 Seleccionar</button>
-            </div>
-        </div>
-
         <div id="statusMessage"></div>
 
-        <!-- Formulario para añadir café -->
+        <!-- Instrucciones para añadir cafés -->
+        <div class="instructions">
+            <h3>📝 ¿Cómo añadir un nuevo café?</h3>
+            <p>Para añadir un nuevo café al catálogo, crea un <strong>issue</strong> en este repositorio con el label <code>cafe</code> y la siguiente información en el contenido:</p>
+            <pre style="background: #f5f5f5; padding: 10px; border-radius: 5px; margin: 10px 0;">
+**Nombre:** Café de Colombia
+**Origen:** Colombia, Huila
+**Tostador:** Café Central
+**Precio:** 12.50
+**Puntuación:** 4
+**Fecha de compra:** 2024-12-01
+**Imagen:** https://ejemplo.com/imagen.jpg
+**Notas:** Café con notas a chocolate y frutas rojas, cuerpo medio.
+            </pre>
+            <p>Una vez creado el issue, el catálogo se actualizará automáticamente. También puedes editar un issue existente para modificar la información.</p>
+        </div>
+
+        <!-- Formulario para añadir café (oculto ya que ahora se usa via issues) -->
         <div id="addForm" class="add-form hidden">
             <h2>Añadir Nuevo Café</h2>
             <form id="coffeeForm">
@@ -436,28 +271,24 @@
 
     <script>
         let coffees = [];
-        let userData = null;
-        let selectedRepo = null;
-        const fileName = 'cafes.json';
         
-        const CLIENT_ID = 'Ov23li3GvZW7jA71LGXR';
-        const REDIRECT_URI = window.location.origin + window.location.pathname;
-
-        // Verificar si hay código de autorización en la URL
-        function checkAuthCode() {
-            const urlParams = new URLSearchParams(window.location.search);
-            const code = urlParams.get('code');
-            const state = urlParams.get('state');
-            
-            if (code && state === 'coffee-catalog-auth') {
-                // Limpiar URL
-                window.history.replaceState({}, document.title, window.location.pathname);
-                
-                // Intercambiar código por token
-                exchangeCodeForToken(code);
-            } else {
-                // Verificar si hay token guardado
-                checkStoredAuth();
+        // Cargar cafés desde el JSON generado automáticamente
+        async function loadCoffees() {
+            try {
+                const response = await fetch('./cafes.json');
+                if (response.ok) {
+                    coffees = await response.json();
+                    displayCoffees();
+                    showStatus(`📥 Cargados ${coffees.length} cafés desde el catálogo`, 'success');
+                } else {
+                    showStatus('📝 No se encontró el archivo de cafés. Crea un issue con el label "cafe" para añadir tu primer café.', 'info');
+                    coffees = [];
+                    displayCoffees();
+                }
+            } catch (error) {
+                showStatus('❌ Error cargando cafés: ' + error.message, 'error');
+                coffees = [];
+                displayCoffees();
             }
         }
 
@@ -884,7 +715,7 @@
                         ${coffee.purchaseDate ? `<div class="coffee-detail"><strong>Comprado:</strong> ${new Date(coffee.purchaseDate).toLocaleDateString('es-ES')}</div>` : ''}
                         ${coffee.rating ? `<div class="rating">${generateStars(coffee.rating)}</div>` : ''}
                         ${coffee.notes ? `<div class="coffee-detail" style="margin-top: 10px;"><strong>Notas:</strong> ${coffee.notes}</div>` : ''}
-                        <button onclick="deleteCoffee(${index})" style="background: #dc3545; margin-top: 10px; padding: 8px 15px; font-size: 14px;">🗑️ Eliminar</button>
+                        <button onclick="deleteCoffee(${index})" style="background: #6c757d; margin-top: 10px; padding: 8px 15px; font-size: 14px;">ℹ️ Editar via Issue</button>
                     </div>
                 </div>
             `).join('');
@@ -903,79 +734,15 @@
             return stars;
         }
 
-        // Eliminar café
+        // Eliminar café - Ya no es posible desde la web, se hace via issues
         async function deleteCoffee(index) {
-            if (confirm('¿Estás seguro de que quieres eliminar este café?')) {
-                coffees.splice(index, 1);
-                await saveCoffees();
-                displayCoffees();
-            }
-        }
-
-        // Manejar envío del formulario
-        document.addEventListener('DOMContentLoaded', function() {
-            const form = document.getElementById('coffeeForm');
-            if (form) {
-                form.addEventListener('submit', async function(e) {
-                    e.preventDefault();
-                    
-                    const formData = new FormData(form);
-                    const coffee = {
-                        name: document.getElementById('coffeeName').value,
-                        origin: document.getElementById('coffeeOrigin').value,
-                        roaster: document.getElementById('coffeeRoaster').value,
-                        price: document.getElementById('coffeePrice').value ? parseFloat(document.getElementById('coffeePrice').value) : null,
-                        rating: document.getElementById('coffeeRating').value ? parseInt(document.getElementById('coffeeRating').value) : null,
-                        purchaseDate: document.getElementById('coffeePurchaseDate').value,
-                        notes: document.getElementById('coffeeNotes').value,
-                        image: null // Por ahora sin imagen
-                    };
-                    
-                    // Manejar imagen si se seleccionó
-                    const imageFile = document.getElementById('coffeeImage').files[0];
-                    if (imageFile) {
-                        try {
-                            coffee.image = await fileToBase64(imageFile);
-                        } catch (error) {
-                            showStatus('⚠️ Error procesando imagen: ' + error.message, 'error');
-                        }
-                    }
-                    
-                    coffees.push(coffee);
-                    await saveCoffees();
-                    displayCoffees();
-                    form.reset();
-                    
-                    showStatus('✅ Café añadido correctamente', 'success');
-                });
-            }
-        });
-
-        // Convertir archivo a base64
-        function fileToBase64(file) {
-            return new Promise((resolve, reject) => {
-                const reader = new FileReader();
-                reader.readAsDataURL(file);
-                reader.onload = () => resolve(reader.result);
-                reader.onerror = error => reject(error);
-            });
-        }
-
-        // Arreglar la función saveCoffees (estaba llamándose a sí misma)
-        async function saveCoffees() {
-            // Si estamos en modo demostración, guardar localmente
-            if (userData && userData.login === 'usuario_demo') {
-                localStorage.setItem('demo_coffees', JSON.stringify(coffees));
-                showStatus('💾 Datos guardados localmente', 'success');
-                return;
-            }
-            
-            // Si no, usar GitHub
-            await saveToGitHub();
+            alert('Para eliminar un café, cierra o edita el issue correspondiente en GitHub. El catálogo se actualizará automáticamente.');
         }
 
         // Cargar datos al iniciar la página
-        checkAuthCode();
+        document.addEventListener('DOMContentLoaded', function() {
+            loadCoffees();
+        });
     </script>
 </body>
 </html>
