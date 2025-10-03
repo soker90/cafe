@@ -1,5 +1,29 @@
 [
   {
+    "name": "Balcón de la Montaña",
+    "origin": "Colombia",
+    "region": "Neira",
+    "roaster": "San Angustín",
+    "price": null,
+    "rating": null,
+    "purchaseDate": "2024-01-01",
+    "process": "Lavado",
+    "variety": "Caturra, Colombia",
+    "altitude": 1840,
+    "flavorNotes": [
+      "Chocolate",
+      "Fruta de hueso",
+      "Frutos rojas",
+      "Amaretto"
+    ],
+    "packageImage": "https://github.com/user-attachments/assets/4f8fbb86-e81c-4bb6-916b-ce6afa460c62",
+    "notes": "Acided Media Productor: Familia Duque Vásquez",
+    "issueNumber": 11,
+    "issueTitle": "[CAFÉ] Balcón de la Montaña",
+    "createdAt": "2025-10-03T23:46:55Z",
+    "updatedAt": "2025-10-03T23:46:55Z"
+  },
+  {
     "name": "Randall",
     "origin": "Ruanda",
     "region": "Kamina, Nyamasheke",
