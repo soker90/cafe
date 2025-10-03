@@ -1,5 +1,28 @@
 [
   {
+    "name": "Café Formulario Test",
+    "origin": "Costa Rica, Tarrazú",
+    "roaster": "Specialty Coffee Roasters",
+    "price": 22,
+    "rating": 5,
+    "purchaseDate": "2024-10-04",
+    "process": "Honey",
+    "variety": "Caturra",
+    "altitude": 1800,
+    "flavorNotes": [
+      "Miel",
+      "Frutas tropicales",
+      "Acidez cítrica",
+      "Final dulce"
+    ],
+    "packageImage": "https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=400&h=400&fit=crop&crop=faces&auto=format&q=80",
+    "notes": "Este café se procesó con el método Honey, lo que le da una dulzura natural increíble. Notas complejas que evolucionan en cada sorbo. Perfecto para métodos de filtrado como V60 o Chemex.",
+    "issueNumber": 4,
+    "issueTitle": "🧪 Test Formulario - Café Honey Process",
+    "createdAt": "2025-10-03T22:05:43Z",
+    "updatedAt": "2025-10-03T22:05:43Z"
+  },
+  {
     "name": "Café de Prueba Automatizada MCP",
     "origin": "Colombia, Test Region",
     "roaster": "Test Roasters MCP",
