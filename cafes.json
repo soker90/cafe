@@ -1,5 +1,28 @@
 [
   {
+    "name": "Galicia",
+    "origin": "Brasil",
+    "region": "Cerrado Mineiro, Perdizes",
+    "roaster": "San Agustín",
+    "price": null,
+    "rating": null,
+    "purchaseDate": "2024-01-01",
+    "process": "Natural",
+    "variety": "Catuaí rojo",
+    "altitude": 931,
+    "flavorNotes": [
+      "Cítricos",
+      "Chocolate",
+      "Fresa"
+    ],
+    "packageImage": "https://github.com/user-attachments/assets/7d0034eb-539c-45f0-91f0-f4c9546b4dca",
+    "notes": "Es redondo, con cuerpo y acidez media/alta",
+    "issueNumber": 12,
+    "issueTitle": "[CAFÉ] San Agustín Galicia",
+    "createdAt": "2025-10-03T23:54:13Z",
+    "updatedAt": "2025-10-03T23:54:13Z"
+  },
+  {
     "name": "Balcón de la Montaña",
     "origin": "Colombia",
     "region": "Neira",
