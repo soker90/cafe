@@ -7,19 +7,20 @@
     "price": null,
     "rating": 5,
     "purchaseDate": "2023-01-01",
-    "process": "Otro",
+    "process": "Anaeróbico",
     "variety": "Tabi",
     "altitude": 1,
     "flavorNotes": [
       "Caramelo",
-      "piel de naranja y melocotón"
+      "piel de naranja",
+      "melocotón"
     ],
     "packageImage": "https://github.com/user-attachments/assets/d3a61947-4241-46b5-9245-639218f2e721",
     "notes": "Tueste: Tueste Filtro o Espresso Productor: Norbey Quimbayo",
     "issueNumber": 6,
     "issueTitle": "[CAFÉ] Osorio Colombia",
     "createdAt": "2025-10-03T22:57:29Z",
-    "updatedAt": "2025-10-03T22:57:29Z"
+    "updatedAt": "2025-10-03T22:58:40Z"
   },
   {
     "name": "Paisano",
