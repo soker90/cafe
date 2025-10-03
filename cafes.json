@@ -1,5 +1,28 @@
 [
   {
+    "name": "La noria coffee project",
+    "origin": "Colombia",
+    "region": null,
+    "roaster": "Randall",
+    "price": null,
+    "rating": null,
+    "purchaseDate": "2023-01-01",
+    "process": "Honey",
+    "variety": "Castillo",
+    "altitude": null,
+    "flavorNotes": [
+      "Fresón",
+      "Naranja",
+      "Amber ale"
+    ],
+    "packageImage": "https://github.com/user-attachments/assets/af5d53fa-8124-4951-95a2-d7b110e724b4",
+    "notes": null,
+    "issueNumber": 8,
+    "issueTitle": "[CAFÉ] La noria coffee",
+    "createdAt": "2025-10-03T23:13:52Z",
+    "updatedAt": "2025-10-03T23:13:52Z"
+  },
+  {
     "name": "Villamaria",
     "origin": "Colombia",
     "region": "Caldas",
