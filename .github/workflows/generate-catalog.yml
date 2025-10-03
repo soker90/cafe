@@ -33,6 +33,13 @@ jobs:
               price: null,
               rating: null,
               purchaseDate: null,
+              process: null,
+              variety: null,
+              altitude: null,
+              weight: null,
+              roastLevel: null,
+              flavorNotes: [],
+              packageImage: null,
               image: null,
               notes: null
             };
@@ -47,6 +54,13 @@ jobs:
               price: /\*\*Precio:\*\*\s*([0-9.,]+)/i,
               rating: /\*\*Puntuación:\*\*\s*([1-5])/i,
               purchaseDate: /\*\*Fecha de compra:\*\*\s*(\d{4}-\d{2}-\d{2})/i,
+              process: /\*\*Proceso:\*\*\s*(.+)/i,
+              variety: /\*\*Variedad:\*\*\s*(.+)/i,
+              altitude: /\*\*Altitud:\*\*\s*([0-9]+)/i,
+              weight: /\*\*Peso:\*\*\s*([0-9]+)/i,
+              roastLevel: /\*\*Nivel de tueste:\*\*\s*(.+)/i,
+              flavorNotes: /\*\*Notas de sabor:\*\*\s*(.+)/i,
+              packageImage: /\*\*Foto del paquete:\*\*\s*(https?:\/\/[^\s]+)/i,
               image: /\*\*Imagen:\*\*\s*(https?:\/\/[^\s]+)/i,
               notes: /\*\*Notas:\*\*\s*(.+?)(?=\*\*|$)/is
             };
@@ -61,6 +75,11 @@ jobs:
                   value = parseFloat(value.replace(',', '.'));
                 } else if (key === 'rating') {
                   value = parseInt(value);
+                } else if (key === 'altitude' || key === 'weight') {
+                  value = parseInt(value);
+                } else if (key === 'flavorNotes') {
+                  // Convertir lista separada por comas en array
+                  value = value.split(',').map(note => note.trim()).filter(note => note.length > 0);
                 } else if (key === 'notes') {
                   // Limpiar saltos de línea extra
                   value = value.replace(/\n+/g, ' ').trim();

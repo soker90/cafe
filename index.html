@@ -78,12 +78,31 @@
             width: 100%;
             height: 200px;
             object-fit: cover;
-            background: #f0f0f0;
+            background: linear-gradient(135deg, #f0f0f0 0%, #e0e0e0 100%);
             display: flex;
             align-items: center;
             justify-content: center;
             color: #999;
             font-size: 18px;
+            position: relative;
+        }
+
+        .coffee-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .coffee-badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: rgba(139, 69, 19, 0.9);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 12px;
+            font-weight: bold;
         }
 
         .coffee-info {
@@ -153,12 +172,88 @@
             margin-top: 50px;
         }
 
+        .filters-section {
+            background: rgba(255,255,255,0.95);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            margin-bottom: 20px;
+        }
+
+        .filters-section h3 {
+            color: #8B4513;
+            margin-bottom: 15px;
+        }
+
+        .filters-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            align-items: end;
+        }
+
+        .filter-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .filter-group label {
+            font-weight: bold;
+            color: #8B4513;
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+
+        .filter-group select,
+        .filter-group input {
+            padding: 8px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 14px;
+            transition: border-color 0.3s;
+        }
+
+        .filter-group select:focus,
+        .filter-group input:focus {
+            outline: none;
+            border-color: #8B4513;
+        }
+
+        .stats-section {
+            background: rgba(139, 69, 19, 0.9);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            margin-bottom: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            text-align: center;
+        }
+
+        .stat-item {
+            color: white;
+        }
+
+        .stat-number {
+            display: block;
+            font-size: 2em;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .stat-label {
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+
         .instructions {
             background: rgba(255,255,255,0.9);
-            padding: 20px;
+            padding: 15px;
             border-radius: 15px;
             margin-bottom: 20px;
             color: #333;
+            text-align: center;
         }
 
         .instructions h3 {
@@ -166,18 +261,67 @@
             margin-bottom: 10px;
         }
 
-        .instructions pre {
-            background: #f5f5f5;
-            padding: 15px;
-            border-radius: 8px;
-            margin: 15px 0;
-            overflow-x: auto;
-            font-size: 14px;
-            line-height: 1.4;
+        .instructions a {
+            color: #8B4513;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .instructions a:hover {
+            text-decoration: underline;
+        }
+
+        .coffee-process {
+            background: #e8f4f8;
+            color: #0c5460;
+            padding: 3px 8px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 5px;
+        }
+
+        .coffee-process.natural {
+            background: #fff3cd;
+            color: #856404;
+        }
+
+        .coffee-process.honey {
+            background: #fff3cd;
+            color: #856404;
+        }
+
+        .coffee-tag {
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        .flavor-note {
+            background: #8B4513;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 15px;
+            font-size: 11px;
+            font-weight: bold;
+            display: inline-block;
         }
 
         .hidden {
             display: none !important;
+        }
+
+        @media (max-width: 768px) {
+            .filters-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .stats-section {
+                grid-template-columns: repeat(2, 1fr);
+            }
         }
     </style>
 </head>
@@ -187,21 +331,83 @@
 
         <div id="statusMessage"></div>
 
+        <!-- Filtros -->
+        <div class="filters-section">
+            <h3>🔍 Filtrar Cafés</h3>
+            <div class="filters-grid">
+                <div class="filter-group">
+                    <label for="filterTostador">Tostador:</label>
+                    <select id="filterTostador" onchange="applyFilters()">
+                        <option value="">Todos</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="filterOrigen">Origen:</label>
+                    <select id="filterOrigen" onchange="applyFilters()">
+                        <option value="">Todos</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="filterRating">Puntuación:</label>
+                    <select id="filterRating" onchange="applyFilters()">
+                        <option value="">Todas</option>
+                        <option value="5">5 ⭐⭐⭐⭐⭐</option>
+                        <option value="4">4 ⭐⭐⭐⭐</option>
+                        <option value="3">3 ⭐⭐⭐</option>
+                        <option value="2">2 ⭐⭐</option>
+                        <option value="1">1 ⭐</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="filterProceso">Proceso:</label>
+                    <select id="filterProceso" onchange="applyFilters()">
+                        <option value="">Todos</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="searchText">Buscar:</label>
+                    <input type="text" id="searchText" placeholder="Nombre, notas..." oninput="applyFilters()">
+                </div>
+                <div class="filter-group">
+                    <label for="sortBy">Ordenar por:</label>
+                    <select id="sortBy" onchange="applyFilters()">
+                        <option value="createdAt">Fecha de añadido</option>
+                        <option value="rating">Puntuación</option>
+                        <option value="price">Precio</option>
+                        <option value="name">Nombre</option>
+                        <option value="purchaseDate">Fecha de compra</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <button onclick="clearFilters()" style="background: #6c757d;">🗑️ Limpiar</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Estadísticas -->
+        <div class="stats-section" id="statsSection">
+            <div class="stat-item">
+                <span class="stat-number" id="totalCoffees">0</span>
+                <span class="stat-label">Cafés totales</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" id="avgRating">0</span>
+                <span class="stat-label">Puntuación media</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" id="totalSpent">0€</span>
+                <span class="stat-label">Gastado total</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" id="filteredCount">0</span>
+                <span class="stat-label">Mostrados</span>
+            </div>
+        </div>
+
         <!-- Instrucciones para añadir cafés -->
         <div class="instructions">
             <h3>📝 ¿Cómo añadir un nuevo café?</h3>
-            <p>Para añadir un nuevo café al catálogo, crea un <strong>issue</strong> en este repositorio con el label <code>cafe</code> y la siguiente información en el contenido:</p>
-            <pre style="background: #f5f5f5; padding: 10px; border-radius: 5px; margin: 10px 0;">
-**Nombre:** Café de Colombia
-**Origen:** Colombia, Huila
-**Tostador:** Café Central
-**Precio:** 12.50
-**Puntuación:** 4
-**Fecha de compra:** 2024-12-01
-**Imagen:** https://ejemplo.com/imagen.jpg
-**Notas:** Café con notas a chocolate y frutas rojas, cuerpo medio.
-            </pre>
-            <p>Una vez creado el issue, el catálogo se actualizará automáticamente. También puedes editar un issue existente para modificar la información.</p>
+            <p>Para añadir un nuevo café al catálogo, <a href="https://github.com/soker90/cafe/issues/new/choose" target="_blank"><strong>crea un issue</strong></a> con el template "Nuevo Café".</p>
         </div>
 
         <!-- Formulario para añadir café (oculto ya que ahora se usa via issues) -->
@@ -272,24 +478,165 @@
     <script>
         let coffees = [];
         
+        let filteredCoffees = [];
+
         // Cargar cafés desde el JSON generado automáticamente
         async function loadCoffees() {
             try {
                 const response = await fetch('./cafes.json');
                 if (response.ok) {
                     coffees = await response.json();
+                    filteredCoffees = [...coffees];
+                    setupFilters();
                     displayCoffees();
+                    updateStats();
                     showStatus(`📥 Cargados ${coffees.length} cafés desde el catálogo`, 'success');
                 } else {
                     showStatus('📝 No se encontró el archivo de cafés. Crea un issue con el label "cafe" para añadir tu primer café.', 'info');
                     coffees = [];
+                    filteredCoffees = [];
                     displayCoffees();
+                    updateStats();
                 }
             } catch (error) {
                 showStatus('❌ Error cargando cafés: ' + error.message, 'error');
                 coffees = [];
+                filteredCoffees = [];
                 displayCoffees();
+                updateStats();
             }
+        }
+
+        // Configurar opciones de filtros
+        function setupFilters() {
+            // Obtener valores únicos para cada filtro
+            const tostadores = [...new Set(coffees.map(c => c.roaster).filter(Boolean))].sort();
+            const origenes = [...new Set(coffees.map(c => c.origin).filter(Boolean))].sort();
+            const procesos = [...new Set(coffees.map(c => c.process).filter(Boolean))].sort();
+
+            // Llenar select de tostadores
+            const tostadorSelect = document.getElementById('filterTostador');
+            tostadorSelect.innerHTML = '<option value="">Todos</option>';
+            tostadores.forEach(tostador => {
+                tostadorSelect.innerHTML += `<option value="${tostador}">${tostador}</option>`;
+            });
+
+            // Llenar select de orígenes
+            const origenSelect = document.getElementById('filterOrigen');
+            origenSelect.innerHTML = '<option value="">Todos</option>';
+            origenes.forEach(origen => {
+                origenSelect.innerHTML += `<option value="${origen}">${origen}</option>`;
+            });
+
+            // Llenar select de procesos
+            const procesoSelect = document.getElementById('filterProceso');
+            procesoSelect.innerHTML = '<option value="">Todos</option>';
+            procesos.forEach(proceso => {
+                procesoSelect.innerHTML += `<option value="${proceso}">${proceso}</option>`;
+            });
+        }
+
+        // Aplicar filtros
+        function applyFilters() {
+            const filterTostador = document.getElementById('filterTostador').value;
+            const filterOrigen = document.getElementById('filterOrigen').value;
+            const filterRating = document.getElementById('filterRating').value;
+            const filterProceso = document.getElementById('filterProceso').value;
+            const searchText = document.getElementById('searchText').value.toLowerCase();
+            const sortBy = document.getElementById('sortBy').value;
+
+            filteredCoffees = coffees.filter(coffee => {
+                // Filtro por tostador
+                if (filterTostador && coffee.roaster !== filterTostador) return false;
+                
+                // Filtro por origen
+                if (filterOrigen && coffee.origin !== filterOrigen) return false;
+                
+                // Filtro por rating
+                if (filterRating && coffee.rating != filterRating) return false;
+                
+                // Filtro por proceso
+                if (filterProceso && coffee.process !== filterProceso) return false;
+                
+                // Filtro de búsqueda por texto
+                if (searchText) {
+                    const searchableText = [
+                        coffee.name,
+                        coffee.origin,
+                        coffee.roaster,
+                        coffee.notes,
+                        coffee.variety,
+                        ...(coffee.flavorNotes || [])
+                    ].join(' ').toLowerCase();
+                    
+                    if (!searchableText.includes(searchText)) return false;
+                }
+                
+                return true;
+            });
+
+            // Aplicar ordenación
+            sortCoffees(sortBy);
+
+            displayCoffees();
+            updateStats();
+        }
+
+        // Ordenar cafés
+        function sortCoffees(sortBy) {
+            filteredCoffees.sort((a, b) => {
+                switch (sortBy) {
+                    case 'rating':
+                        return (b.rating || 0) - (a.rating || 0);
+                    case 'price':
+                        return (b.price || 0) - (a.price || 0);
+                    case 'name':
+                        return (a.name || '').localeCompare(b.name || '');
+                    case 'purchaseDate':
+                        return new Date(b.purchaseDate || 0) - new Date(a.purchaseDate || 0);
+                    case 'createdAt':
+                    default:
+                        return new Date(b.createdAt || 0) - new Date(a.createdAt || 0);
+                }
+            });
+        }
+
+        // Limpiar filtros
+        function clearFilters() {
+            document.getElementById('filterTostador').value = '';
+            document.getElementById('filterOrigen').value = '';
+            document.getElementById('filterRating').value = '';
+            document.getElementById('filterProceso').value = '';
+            document.getElementById('searchText').value = '';
+            document.getElementById('sortBy').value = 'createdAt';
+            
+            filteredCoffees = [...coffees];
+            sortCoffees('createdAt');
+            displayCoffees();
+            updateStats();
+        }
+
+        // Actualizar estadísticas
+        function updateStats() {
+            const totalCoffees = coffees.length;
+            const filteredCount = filteredCoffees.length;
+            
+            // Calcular puntuación media
+            const ratingsSum = filteredCoffees
+                .filter(c => c.rating)
+                .reduce((sum, c) => sum + c.rating, 0);
+            const ratingsCount = filteredCoffees.filter(c => c.rating).length;
+            const avgRating = ratingsCount > 0 ? (ratingsSum / ratingsCount).toFixed(1) : '0';
+
+            // Calcular gasto total
+            const totalSpent = filteredCoffees
+                .filter(c => c.price)
+                .reduce((sum, c) => sum + parseFloat(c.price), 0);
+
+            document.getElementById('totalCoffees').textContent = totalCoffees;
+            document.getElementById('avgRating').textContent = avgRating;
+            document.getElementById('totalSpent').textContent = totalSpent.toFixed(2) + '€';
+            document.getElementById('filteredCount').textContent = filteredCount;
         }
 
         // Iniciar login con GitHub
@@ -694,31 +1041,90 @@
             const grid = document.getElementById('coffeeGrid');
             const noCoffees = document.getElementById('noCoffees');
             
-            if (coffees.length === 0) {
+            if (filteredCoffees.length === 0) {
                 grid.innerHTML = '';
+                if (coffees.length === 0) {
+                    noCoffees.innerHTML = 'No has añadido ningún café aún. ¡Empieza creando tu primer issue con el label "cafe"!';
+                } else {
+                    noCoffees.innerHTML = 'No se encontraron cafés con los filtros aplicados. Prueba a cambiar los criterios de búsqueda.';
+                }
                 noCoffees.style.display = 'block';
                 return;
             }
             
             noCoffees.style.display = 'none';
             
-            grid.innerHTML = coffees.map((coffee, index) => `
+            grid.innerHTML = filteredCoffees.map((coffee, index) => {
+                const originalIndex = coffees.findIndex(c => c === coffee);
+                return `
                 <div class="coffee-card">
                     <div class="coffee-image">
-                        ${coffee.image ? `<img src="${coffee.image}" alt="${coffee.name}" style="width: 100%; height: 100%; object-fit: cover;">` : '📷 Sin foto'}
+                        ${coffee.packageImage ? `<img src="${coffee.packageImage}" alt="Paquete de ${coffee.name}">` : 
+                          coffee.image ? `<img src="${coffee.image}" alt="${coffee.name}">` : 
+                          '<div style="display: flex; flex-direction: column; align-items: center; gap: 10px;"><span style="font-size: 3em;">☕</span><span>Sin foto</span></div>'}
+                        ${coffee.rating ? `<div class="coffee-badge">${coffee.rating} ⭐</div>` : ''}
                     </div>
                     <div class="coffee-info">
                         <div class="coffee-name">${coffee.name}</div>
-                        ${coffee.origin ? `<div class="coffee-detail"><strong>Origen:</strong> ${coffee.origin}</div>` : ''}
-                        ${coffee.roaster ? `<div class="coffee-detail"><strong>Tostador:</strong> ${coffee.roaster}</div>` : ''}
+                        
+                        <div style="display: flex; flex-wrap: wrap; gap: 10px; margin: 10px 0;">
+                            ${coffee.origin ? `<span class="coffee-tag" style="background: #e3f2fd; color: #1565c0;">🌍 ${coffee.origin}</span>` : ''}
+                            ${coffee.roaster ? `<span class="coffee-tag" style="background: #f3e5f5; color: #7b1fa2;">🏭 ${coffee.roaster}</span>` : ''}
+                            ${coffee.process ? `<span class="coffee-process ${coffee.process.toLowerCase()}">${getProcessEmoji(coffee.process)} ${coffee.process}</span>` : ''}
+                        </div>
+
+                        ${coffee.variety ? `<div class="coffee-detail"><strong>Variedad:</strong> ${coffee.variety}</div>` : ''}
+                        ${coffee.altitude ? `<div class="coffee-detail"><strong>Altitud:</strong> ${coffee.altitude} msnm</div>` : ''}
                         ${coffee.price ? `<div class="coffee-detail"><strong>Precio:</strong> ${coffee.price}€</div>` : ''}
+                        ${coffee.weight ? `<div class="coffee-detail"><strong>Peso:</strong> ${coffee.weight}g</div>` : ''}
+                        ${coffee.roastLevel ? `<div class="coffee-detail"><strong>Tueste:</strong> ${coffee.roastLevel}</div>` : ''}
                         ${coffee.purchaseDate ? `<div class="coffee-detail"><strong>Comprado:</strong> ${new Date(coffee.purchaseDate).toLocaleDateString('es-ES')}</div>` : ''}
-                        ${coffee.rating ? `<div class="rating">${generateStars(coffee.rating)}</div>` : ''}
-                        ${coffee.notes ? `<div class="coffee-detail" style="margin-top: 10px;"><strong>Notas:</strong> ${coffee.notes}</div>` : ''}
-                        <button onclick="deleteCoffee(${index})" style="background: #6c757d; margin-top: 10px; padding: 8px 15px; font-size: 14px;">ℹ️ Editar via Issue</button>
+                        
+                        ${coffee.rating ? `
+                            <div class="rating" style="margin: 10px 0;">
+                                ${generateStars(coffee.rating)}
+                                <span style="margin-left: 10px; color: #8B4513; font-weight: bold;">${coffee.rating}/5</span>
+                            </div>
+                        ` : ''}
+                        
+                        ${coffee.flavorNotes && coffee.flavorNotes.length > 0 ? `
+                            <div style="margin: 10px 0;">
+                                <strong style="color: #8B4513;">Notas de sabor:</strong>
+                                <div style="display: flex; flex-wrap: wrap; gap: 5px; margin-top: 5px;">
+                                    ${coffee.flavorNotes.map(note => `<span class="flavor-note">${note}</span>`).join('')}
+                                </div>
+                            </div>
+                        ` : ''}
+                        
+                        ${coffee.notes ? `<div class="coffee-detail" style="margin-top: 15px; padding: 10px; background: #f8f9fa; border-left: 4px solid #8B4513; border-radius: 4px;"><strong>Notas de cata:</strong><br>${coffee.notes}</div>` : ''}
+                        
+                        <div style="display: flex; gap: 10px; margin-top: 15px;">
+                            <button onclick="viewIssue(${coffee.issueNumber})" style="background: #28a745; padding: 8px 15px; font-size: 14px; flex: 1;">👁️ Ver Issue</button>
+                            <button onclick="editCoffee(${originalIndex})" style="background: #6c757d; padding: 8px 15px; font-size: 14px; flex: 1;">✏️ Editar</button>
+                        </div>
                     </div>
                 </div>
-            `).join('');
+            `;
+            }).join('');
+        }
+
+        // Obtener emoji para el proceso
+        function getProcessEmoji(process) {
+            const processEmojis = {
+                'Lavado': '💧',
+                'Natural': '☀️',
+                'Honey': '🍯',
+                'Semi-lavado': '🌊',
+                'Anaerobic': '🧪'
+            };
+            return processEmojis[process] || '⚙️';
+        }
+
+        // Ver issue en GitHub
+        function viewIssue(issueNumber) {
+            if (issueNumber) {
+                window.open(`https://github.com/soker90/cafe/issues/${issueNumber}`, '_blank');
+            }
         }
 
         // Generar estrellas para la puntuación
@@ -734,9 +1140,14 @@
             return stars;
         }
 
-        // Eliminar café - Ya no es posible desde la web, se hace via issues
-        async function deleteCoffee(index) {
-            alert('Para eliminar un café, cierra o edita el issue correspondiente en GitHub. El catálogo se actualizará automáticamente.');
+        // Editar café - redirige al issue
+        function editCoffee(index) {
+            const coffee = coffees[index];
+            if (coffee && coffee.issueNumber) {
+                window.open(`https://github.com/soker90/cafe/issues/${coffee.issueNumber}`, '_blank');
+            } else {
+                alert('No se pudo encontrar el issue asociado a este café.');
+            }
         }
 
         // Cargar datos al iniciar la página
