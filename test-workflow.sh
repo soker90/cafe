@@ -26,7 +26,6 @@ echo "📝 Creando issue de prueba..."
 
 ISSUE_URL=$(gh issue create \
     --title "🧪 Café de Prueba - $(date '+%Y-%m-%d %H:%M')" \
-    --label "cafe" \
     --body "### Nombre del Café
 Café de Prueba Automatizada
 
@@ -58,7 +57,16 @@ Test Variety
 Chocolate, Prueba, Automation
 
 ### Notas Adicionales
-Este es un café de prueba creado automáticamente para validar el workflow de generación del catálogo. Debería aparecer en cafes.json después de que se ejecute el Action.")
+Este es un café de prueba creado automáticamente para validar el workflow de generación del catálogo. Debería aparecer en cafes.json después de que se ejecute el Action.
+
+### Imagen del Paquete
+![Café de prueba](https://images.unsplash.com/photo-1447933625340-f930f8db2942?w=400&h=400&fit=crop&crop=faces&auto=format&q=80)
+
+_Imagen de ejemplo de un paquete de café de alta calidad_")
+
+# Ahora agregar el label para activar el workflow
+echo "🏷️ Agregando label 'cafe' para activar el workflow..."
+gh issue edit \$ISSUE_NUMBER --add-label "cafe"
 
 echo "✅ Issue creado: $ISSUE_URL"
 

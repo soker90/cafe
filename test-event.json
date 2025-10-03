@@ -1,0 +1,21 @@
+{
+  "action": "opened",
+  "issue": {
+    "number": 999,
+    "title": "Café de Prueba Local",
+    "body": "### Nombre del Café\nCafé de Prueba Local\n\n### Origen\nColombia, Huila\n\n### Tostador\nTest Roasters\n\n### Precio\n12.50\n\n### Puntuación\n4\n\n### Fecha de Compra\n2024-10-03\n\n### Proceso\nLavado\n\n### Variedad\nCaturra\n\n### Altitud\n1600\n\n### Notas de Sabor\nChocolate, Caramelo, Frutas rojas\n\n### Notas Adicionales\nEste es un café de prueba para validar el workflow con act. Debería procesarse correctamente y extraer todos los campos.",
+    "labels": [
+      {
+        "name": "cafe"
+      }
+    ],
+    "created_at": "2024-10-03T10:00:00Z",
+    "updated_at": "2024-10-03T10:00:00Z"
+  },
+  "repository": {
+    "name": "cafe",
+    "owner": {
+      "login": "soker90"
+    }
+  }
+}

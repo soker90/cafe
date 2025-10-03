@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 📚 Documentación
+    url: https://github.com/soker90/cafe/blob/master/README.md
+    about: Lee la documentación completa del proyecto
+  - name: 🌐 Ver Catálogo Web
+    url: https://soker90.github.io/cafe/
+    about: Ve el catálogo web con todos los cafés

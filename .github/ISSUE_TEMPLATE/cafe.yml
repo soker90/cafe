@@ -2,6 +2,7 @@ name: ☕ Nuevo Café
 description: Agregar un nuevo café al catálogo
 title: "[CAFÉ] "
 labels: ["cafe"]
+assignees: []
 body:
   - type: markdown
     attributes:
@@ -118,11 +119,23 @@ body:
     validations:
       required: false
 
+  - type: markdown
+    attributes:
+      value: |
+        ## 📸 Imagen del Paquete
+        
+        **Instrucciones para subir foto:**
+        1. Toma una foto del paquete de café
+        2. Arrastra y suelta la imagen en el área de texto de abajo
+        3. O pega un enlace a la imagen
+        
+        La imagen aparecerá automáticamente en el catálogo web.
+
   - type: textarea
     id: imagen
     attributes:
-      label: Imagen del Paquete
-      description: Sube una imagen del paquete o pega un enlace
-      placeholder: "Arrastra una imagen aquí o pega un enlace"
+      label: Imagen
+      description: Arrastra aquí tu imagen del paquete de café
+      placeholder: "Arrastra una imagen aquí..."
     validations:
       required: false
