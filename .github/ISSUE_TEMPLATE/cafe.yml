@@ -1,0 +1,128 @@
+name: ☕ Nuevo Café
+description: Agregar un nuevo café al catálogo
+title: "[CAFÉ] "
+labels: ["cafe"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ¡Gracias por agregar un nuevo café al catálogo! 
+        Este formulario te ayudará a crear una entrada completa.
+
+  - type: input
+    id: nombre
+    attributes:
+      label: Nombre del Café
+      description: El nombre del café o blend
+      placeholder: "ej. Café de Colombia Premium"
+    validations:
+      required: true
+
+  - type: input
+    id: origen
+    attributes:
+      label: Origen
+      description: País y región de origen
+      placeholder: "ej. Colombia, Huila"
+    validations:
+      required: false
+
+  - type: input
+    id: tostador
+    attributes:
+      label: Tostador
+      description: Nombre del tostador o marca
+      placeholder: "ej. Café Central"
+    validations:
+      required: false
+
+  - type: input
+    id: precio
+    attributes:
+      label: Precio
+      description: Precio en euros (solo el número)
+      placeholder: "ej. 12.50"
+    validations:
+      required: false
+
+  - type: dropdown
+    id: puntuacion
+    attributes:
+      label: Puntuación
+      description: Tu puntuación del café (1-5 estrellas)
+      options:
+        - "1"
+        - "2" 
+        - "3"
+        - "4"
+        - "5"
+    validations:
+      required: false
+
+  - type: input
+    id: fecha-compra
+    attributes:
+      label: Fecha de Compra
+      description: Fecha de compra (YYYY-MM-DD)
+      placeholder: "ej. 2024-03-15"
+    validations:
+      required: false
+
+  - type: dropdown
+    id: proceso
+    attributes:
+      label: Proceso
+      description: Método de procesado del café
+      options:
+        - "Lavado"
+        - "Natural"
+        - "Honey"
+        - "Semi-lavado"
+        - "Otro"
+    validations:
+      required: false
+
+  - type: input
+    id: variedad
+    attributes:
+      label: Variedad
+      description: Variedad del café
+      placeholder: "ej. Caturra, Bourbon, Geisha"
+    validations:
+      required: false
+
+  - type: input
+    id: altitud
+    attributes:
+      label: Altitud
+      description: Altitud de cultivo en metros (solo el número)
+      placeholder: "ej. 1650"
+    validations:
+      required: false
+
+  - type: input
+    id: notas-sabor
+    attributes:
+      label: Notas de Sabor
+      description: Notas de cata separadas por comas
+      placeholder: "ej. Chocolate, Frutas rojas, Caramelo"
+    validations:
+      required: false
+
+  - type: textarea
+    id: notas
+    attributes:
+      label: Notas Adicionales
+      description: Tus impresiones y comentarios sobre el café
+      placeholder: "Describe tu experiencia con este café..."
+    validations:
+      required: false
+
+  - type: textarea
+    id: imagen
+    attributes:
+      label: Imagen del Paquete
+      description: Sube una imagen del paquete o pega un enlace
+      placeholder: "Arrastra una imagen aquí o pega un enlace"
+    validations:
+      required: false

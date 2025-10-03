@@ -1,5 +1,9 @@
 # ☕ Mi Catálogo de Cafés
 
+[![Made with Claude AI](https://img.shields.io/badge/Made%20with-Claude%20AI-orange?style=flat-square&logo=anthropic)](https://claude.ai)
+[![GitHub Actions](https://img.shields.io/github/actions/workflow/status/soker90/cafe/generate-catalog.yml?style=flat-square&logo=github-actions&label=Catalog%20Generation)](https://github.com/soker90/cafe/actions)
+[![Issues](https://img.shields.io/github/issues/soker90/cafe/cafe?style=flat-square&logo=coffeescript&label=Cafés&color=brown)](https://github.com/soker90/cafe/issues?q=is%3Aopen+label%3Acafe)
+
 Un catálogo personal de cafés que se actualiza automáticamente desde GitHub Issues.
 
 ## 🚀 Cómo funciona
@@ -13,24 +17,11 @@ Este proyecto utiliza GitHub Issues como base de datos para el catálogo de caf�
 
 ## 📝 Cómo añadir un nuevo café
 
-1. **Crea un nuevo issue** en este repositorio
-2. **Añade el label `cafe`** al issue
-3. **Usa el título** para el nombre del café
-4. **En el contenido del issue**, incluye la información usando este formato:
-
-```
-**Nombre:** Café de Colombia Premium
-**Origen:** Colombia, Huila
-**Tostador:** Café Central
-**Precio:** 12.50
-**Puntuación:** 4
-**Fecha de compra:** 2024-03-15
-**Proceso:** Lavado
-**Variedad:** Caturra
-**Altitud:** 1650
-**Notas de sabor:** Chocolate, Frutas rojas, Caramelo
-**Notas:** Café con excelentes notas a chocolate y frutas rojas, cuerpo medio y acidez balanceada. Perfecto para método V60.
-```
+1. **Ve a la [pestaña de Issues](../../issues)**
+2. **Haz clic en "New Issue"**
+3. **Selecciona "☕ Nuevo Café"** del template
+4. **Completa el formulario** con la información del café
+5. **Crea el issue** - ¡El catálogo se actualizará automáticamente!
 
 ### Campos disponibles
 
@@ -49,14 +40,28 @@ Este proyecto utiliza GitHub Issues como base de datos para el catálogo de caf�
 
 ## ✏️ Cómo editar un café
 
-1. Encuentra el issue correspondiente al café
-2. Edita el contenido del issue
-3. El catálogo se actualizará automáticamente
+1. **Encuentra el issue correspondiente** al café que quieres editar
+2. **Haz clic en "Edit"** en el issue
+3. **Modifica la información** que necesites cambiar
+4. **Guarda los cambios** - El catálogo se actualizará automáticamente
 
 ## 🗑️ Cómo eliminar un café
 
-1. Cierra el issue correspondiente al café
-2. El café desaparecerá del catálogo automáticamente
+### Opción 1: Cerrar el issue
+1. **Encuentra el issue** correspondiente al café
+2. **Cierra el issue** haciendo clic en "Close issue"
+3. El café desaparecerá del catálogo automáticamente
+
+### Opción 2: Quitar el label
+1. **Encuentra el issue** correspondiente al café
+2. **Quita el label "cafe"** del issue
+3. El café desaparecerá del catálogo pero el issue permanecerá abierto
+
+## 🔄 Gestión masiva
+
+- **Reabrir café:** Reabre el issue cerrado y volverá al catálogo
+- **Cambiar información:** Cualquier edición del issue actualiza el catálogo instantáneamente
+- **Etiquetas adicionales:** Puedes agregar otros labels sin afectar el funcionamiento
 
 ## 🔄 Actualización automática
 

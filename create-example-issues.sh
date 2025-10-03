@@ -15,39 +15,114 @@ echo -e "${GREEN}📝 Creando issue: Café de Colombia Premium${NC}"
 gh issue create \
   --title "Café de Colombia Premium" \
   --label "cafe" \
-  --body "**Nombre:** Café de Colombia Premium
-**Origen:** Colombia, Huila
-**Tostador:** Café Central
-**Precio:** 12.50
-**Puntuación:** 4
-**Fecha de compra:** 2024-03-15
-**Notas:** Café con excelentes notas a chocolate y frutas rojas, cuerpo medio y acidez balanceada. Perfecto para método V60."
+  --body "### Nombre del Café
+Café de Colombia Premium
+
+### Origen
+Colombia, Huila
+
+### Tostador
+Café Central
+
+### Precio
+12.50
+
+### Puntuación
+4
+
+### Fecha de Compra
+2024-03-15
+
+### Proceso
+Lavado
+
+### Variedad
+Caturra
+
+### Altitud
+1650
+
+### Notas de Sabor
+Chocolate, Frutas rojas, Caramelo
+
+### Notas Adicionales
+Café con excelentes notas a chocolate y frutas rojas, cuerpo medio y acidez balanceada. Perfecto para método V60. Muy consistente en cada taza."
 
 # Issue 2: Geisha Panama
 echo -e "${GREEN}📝 Creando issue: Geisha Panama Especial${NC}"
 gh issue create \
   --title "Geisha Panama Especial" \
   --label "cafe" \
-  --body "**Nombre:** Geisha Panama Especial
-**Origen:** Panamá, Boquete
-**Tostador:** Third Wave Coffee
-**Precio:** 28.00
-**Puntuación:** 5
-**Fecha de compra:** 2024-03-20
-**Notas:** Café excepcional con notas florales distintivas y toques de té blanco. Acidez brillante y muy aromático. Uno de los mejores cafés que he probado."
+  --body "### Nombre del Café
+Geisha Panama Especial
+
+### Origen
+Panamá, Boquete
+
+### Tostador
+Third Wave Coffee
+
+### Precio
+28.00
+
+### Puntuación
+5
+
+### Fecha de Compra
+2024-03-20
+
+### Proceso
+Natural
+
+### Variedad
+Geisha
+
+### Altitud
+1800
+
+### Notas de Sabor
+Florales, Té blanco, Bergamota, Miel
+
+### Notas Adicionales
+Café excepcional con notas florales distintivas y toques de té blanco. Acidez brillante y muy aromático. Uno de los mejores cafés que he probado."
 
 # Issue 3: Brasil Santos
 echo -e "${GREEN}📝 Creando issue: Brasil Santos${NC}"
 gh issue create \
   --title "Brasil Santos" \
   --label "cafe" \
-  --body "**Nombre:** Brasil Santos
-**Origen:** Brasil, Santos
-**Tostador:** Café Lokál
-**Precio:** 8.90
-**Puntuación:** 3
-**Fecha de compra:** 2024-03-10
-**Notas:** Café suave con notas a nuez y caramelo. Perfecto para café con leche. Buen café de diario."
+  --body "### Nombre del Café
+Brasil Santos
+
+### Origen
+Brasil, Santos
+
+### Tostador
+Café Lokál
+
+### Precio
+8.90
+
+### Puntuación
+3
+
+### Fecha de Compra
+2024-03-10
+
+### Proceso
+Natural
+
+### Variedad
+Bourbon
+
+### Altitud
+1200
+
+### Notas de Sabor
+Nuez, Caramelo, Chocolate con leche
+
+### Notas Adicionales
+Café suave con notas a nuez y caramelo. Perfecto para café con leche. Buen café de diario, relación calidad-precio excelente."
 
 # Issue 4: Etiopía Yirgacheffe
 echo -e "${GREEN}📝 Creando issue: Etiopía Yirgacheffe${NC}"

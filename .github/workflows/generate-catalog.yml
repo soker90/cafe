@@ -2,7 +2,7 @@ name: Generate Coffee Catalog
 
 on:
   issues:
-    types: [opened, edited, closed, reopened, labeled, unlabeled]
+    types: [opened, edited, closed, reopened, labeled, unlabeled, deleted]
 
 permissions:
   contents: write
@@ -11,7 +11,7 @@ permissions:
 jobs:
   generate-catalog:
     runs-on: ubuntu-latest
-    if: contains(github.event.issue.labels.*.name, 'cafe')
+    if: contains(github.event.issue.labels.*.name, 'cafe') || (github.event.action == 'unlabeled' && github.event.label.name == 'cafe')
     
     steps:
     - name: Checkout repository
@@ -47,34 +47,28 @@ jobs:
             
             if (!body) return coffee;
             
-            // Extraer campos usando regex
-            const patterns = {
-              name: /\*\*Nombre:\*\*\s*(.+)/i,
-              origin: /\*\*Origen:\*\*\s*(.+)/i,
-              roaster: /\*\*Tostador:\*\*\s*(.+)/i,
-              price: /\*\*Precio:\*\*\s*([0-9.,]+)/i,
-              rating: /\*\*Puntuación:\*\*\s*([1-5])/i,
-              purchaseDate: /\*\*Fecha de compra:\*\*\s*(\d{4}-\d{2}-\d{2})/i,
-              process: /\*\*Proceso:\*\*\s*(.+)/i,
-              variety: /\*\*Variedad:\*\*\s*(.+)/i,
-              altitude: /\*\*Altitud:\*\*\s*([0-9]+)/i,
-              flavorNotes: /\*\*Notas de sabor:\*\*\s*(.+)/i,
-              notes: /\*\*Notas:\*\*\s*(.+?)(?=!\[|$)/is
+            // Parsing de formulario de GitHub
+            const formPatterns = {
+              name: /### Nombre del Café\s*\n\s*(.+)/i,
+              origin: /### Origen\s*\n\s*(.+)/i,
+              roaster: /### Tostador\s*\n\s*(.+)/i,
+              price: /### Precio\s*\n\s*([0-9.,]+)/i,
+              rating: /### Puntuación\s*\n\s*([1-5])/i,
+              purchaseDate: /### Fecha de Compra\s*\n\s*(\d{4}-\d{2}-\d{2})/i,
+              process: /### Proceso\s*\n\s*(.+)/i,
+              variety: /### Variedad\s*\n\s*(.+)/i,
+              altitude: /### Altitud\s*\n\s*([0-9]+)/i,
+              flavorNotes: /### Notas de Sabor\s*\n\s*(.+)/i,
+              notes: /### Notas Adicionales\s*\n\s*([\s\S]*?)(?=###|$)/i
             };
             
-            // Extraer imagen subida en el issue
-            const imagePattern = /!\[.*?\]\((https:\/\/[^)]+)\)/i;
-            const imageMatch = body.match(imagePattern);
-            if (imageMatch) {
-              coffee.packageImage = imageMatch[1];
-            }
-            
-            for (const [key, pattern] of Object.entries(patterns)) {
+            // Procesar cada campo del formulario
+            for (const [key, pattern] of Object.entries(formPatterns)) {
               const match = body.match(pattern);
-              if (match) {
+              if (match && match[1] && match[1].trim() !== '_No response_' && match[1].trim() !== '') {
                 let value = match[1].trim();
                 
-                // Procesar valores específicos
+                // Procesar valores específicos según el tipo
                 if (key === 'price') {
                   value = parseFloat(value.replace(',', '.'));
                 } else if (key === 'rating') {
@@ -85,7 +79,7 @@ jobs:
                   // Convertir lista separada por comas en array
                   value = value.split(',').map(note => note.trim()).filter(note => note.length > 0);
                 } else if (key === 'notes') {
-                  // Limpiar saltos de línea extra
+                  // Limpiar saltos de línea extra y espacios
                   value = value.replace(/\n+/g, ' ').trim();
                 }
                 
@@ -93,10 +87,20 @@ jobs:
               }
             }
             
-            return coffee;
+            // Extraer imagen subida en el issue
+            const imagePattern = /!\[.*?\]\((https:\/\/[^)]+)\)/i;
+            const imageMatch = body.match(imagePattern);
+            if (imageMatch) {
+              coffee.packageImage = imageMatch[1];
+            }            return coffee;
           }
           
           try {
+            console.log(`Triggered by action: ${context.payload.action}`);
+            if (context.payload.issue) {
+              console.log(`Processing issue #${context.payload.issue.number}: ${context.payload.issue.title}`);
+            }
+            
             // Obtener todos los issues abiertos con label 'cafe'
             const { data: issues } = await github.rest.issues.listForRepo({
               owner: context.repo.owner,
@@ -110,6 +114,7 @@ jobs:
             
             // Convertir issues a cafés
             const coffees = issues.map(issue => {
+              console.log(`Processing issue #${issue.number}: ${issue.title}`);
               const coffee = parseIssueBody(issue.body);
               coffee.issueNumber = issue.number;
               coffee.issueTitle = issue.title;
@@ -122,7 +127,13 @@ jobs:
               }
               
               return coffee;
-            }).filter(coffee => coffee.name); // Solo cafés con nombre
+            }).filter(coffee => {
+              if (!coffee.name) {
+                console.log(`Filtering out coffee without name from issue #${coffee.issueNumber}`);
+                return false;
+              }
+              return true;
+            });
             
             // Ordenar por fecha de creación (más recientes primero)
             coffees.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
@@ -132,10 +143,11 @@ jobs:
             fs.writeFileSync('cafes.json', jsonContent);
             
             console.log(`Generated cafes.json with ${coffees.length} coffees`);
-            console.log('Coffees:', coffees.map(c => c.name));
+            console.log('Coffees:', coffees.map(c => `${c.name} (Issue #${c.issueNumber})`));
             
           } catch (error) {
             console.error('Error generating catalog:', error);
+            console.error('Error details:', error.message);
             process.exit(1);
           }
           
@@ -145,8 +157,18 @@ jobs:
         git config --local user.name "GitHub Action"
         git add cafes.json
         if git diff --staged --quiet; then
-          echo "No changes to commit"
+          echo "No changes to commit to cafes.json"
         else
-          git commit -m "Update coffee catalog from issues"
+          COMMIT_MSG="Update coffee catalog from issues"
+          if [ "${{ github.event.action }}" = "opened" ]; then
+            COMMIT_MSG="Add new coffee: ${{ github.event.issue.title }} (Issue #${{ github.event.issue.number }})"
+          elif [ "${{ github.event.action }}" = "edited" ]; then
+            COMMIT_MSG="Update coffee: ${{ github.event.issue.title }} (Issue #${{ github.event.issue.number }})"
+          elif [ "${{ github.event.action }}" = "closed" ]; then
+            COMMIT_MSG="Remove coffee: ${{ github.event.issue.title }} (Issue #${{ github.event.issue.number }})"
+          elif [ "${{ github.event.action }}" = "unlabeled" ]; then
+            COMMIT_MSG="Remove coffee from catalog (Issue #${{ github.event.issue.number }})"
+          fi
+          git commit -m "$COMMIT_MSG"
           git push
         fi
