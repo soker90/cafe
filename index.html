@@ -987,9 +987,8 @@
                         
                         ${coffee.notes ? `<div class="coffee-detail" style="margin-top: 15px; padding: 10px; background: #f8f9fa; border-left: 4px solid #8B4513; border-radius: 4px;"><strong>Notas de cata:</strong><br>${coffee.notes}</div>` : ''}
                         
-                        <div style="display: flex; gap: 10px; margin-top: 15px;">
-                            <button onclick="viewIssue(${coffee.issueNumber})" style="background: #28a745; padding: 8px 15px; font-size: 14px; flex: 1;">👁️ Ver Issue</button>
-                            <button onclick="editCoffee(${originalIndex})" style="background: #6c757d; padding: 8px 15px; font-size: 14px; flex: 1;">✏️ Editar</button>
+                        <div style="margin-top: 15px;">
+                            <button onclick="editCoffee(${originalIndex})" style="background: #6c757d; padding: 10px 15px; font-size: 14px; width: 100%; border: none; border-radius: 5px; color: white; cursor: pointer;">✏️ Editar</button>
                         </div>
                     </div>
                 </div>
@@ -1010,12 +1009,6 @@
         }
 
         // Ver issue en GitHub
-        function viewIssue(issueNumber) {
-            if (issueNumber) {
-                window.open(`https://github.com/soker90/cafe/issues/${issueNumber}`, '_blank');
-            }
-        }
-
         // Generar estrellas para la puntuación
         function generateStars(rating) {
             let stars = '';
