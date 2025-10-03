@@ -24,6 +24,8 @@ body:
       label: Origen
       description: País y región de origen
       placeholder: "ej. Colombia, Huila"
+    validations:
+      required: false
 
   - type: input
     id: tostador
@@ -31,6 +33,8 @@ body:
       label: Tostador
       description: Nombre del tostador o marca
       placeholder: "ej. Café Central"
+    validations:
+      required: false
 
   - type: input
     id: precio
@@ -38,6 +42,8 @@ body:
       label: Precio
       description: Precio en euros (solo el número)
       placeholder: "ej. 12.50"
+    validations:
+      required: false
 
   - type: dropdown
     id: puntuacion
@@ -50,6 +56,8 @@ body:
         - "3"
         - "4"
         - "5"
+    validations:
+      required: false
 
   - type: input
     id: fecha-compra
@@ -57,6 +65,8 @@ body:
       label: Fecha de Compra
       description: Fecha de compra (YYYY-MM-DD)
       placeholder: "ej. 2024-03-15"
+    validations:
+      required: false
 
   - type: dropdown
     id: proceso
@@ -69,6 +79,8 @@ body:
         - "Honey"
         - "Semi-lavado"
         - "Otro"
+    validations:
+      required: false
 
   - type: input
     id: variedad
@@ -76,6 +88,8 @@ body:
       label: Variedad
       description: Variedad del café
       placeholder: "ej. Caturra, Bourbon, Geisha"
+    validations:
+      required: false
 
   - type: input
     id: altitud
@@ -83,12 +97,17 @@ body:
       label: Altitud
       description: Altitud de cultivo en metros (solo el número)
       placeholder: "ej. 1650"
+    validations:
+      required: false
 
   - type: input
     id: notas-sabor
     attributes:
+      label: Notas de Sabor
       description: Notas de cata separadas por comas
       placeholder: "ej. Chocolate, Frutas rojas, Caramelo"
+    validations:
+      required: false
 
   - type: textarea
     id: notas
@@ -96,6 +115,8 @@ body:
       label: Notas Adicionales
       description: Tus impresiones y comentarios sobre el café
       placeholder: "Describe tu experiencia con este café..."
+    validations:
+      required: false
 
   - type: markdown
     attributes:
@@ -115,3 +136,6 @@ body:
       label: Imagen
       description: Arrastra aquí tu imagen del paquete de café
       placeholder: "Arrastra una imagen aquí..."
+      render: markdown
+    validations:
+      required: false
