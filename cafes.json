@@ -1,6 +1,29 @@
 [
   {
     "name": "Randall",
+    "origin": "Ruanda",
+    "region": "Kamina, Nyamasheke",
+    "roaster": "Randall",
+    "price": null,
+    "rating": null,
+    "purchaseDate": "2023-01-01",
+    "process": "Lavado",
+    "variety": "Red Bourbon",
+    "altitude": 1800,
+    "flavorNotes": [
+      "Frambuesa",
+      "albaricoque",
+      "jazmin"
+    ],
+    "packageImage": null,
+    "notes": "Productor: Gatare Station",
+    "issueNumber": 10,
+    "issueTitle": "[CAFÉ] Randall kamina",
+    "createdAt": "2025-10-03T23:40:30Z",
+    "updatedAt": "2025-10-03T23:40:30Z"
+  },
+  {
+    "name": "Randall",
     "origin": "Etiopía",
     "region": "Bombe, Sidamo",
     "roaster": "Randall",
