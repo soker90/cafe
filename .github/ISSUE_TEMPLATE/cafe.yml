@@ -121,16 +121,20 @@ body:
   - type: textarea
     id: notas
     attributes:
-      label: Notas Adicionales e Imagen
+      label: Notas Adicionales
+      description: Tus impresiones y comentarios sobre el café
+      placeholder: "Describe tu experiencia con este café..."
+    validations:
+      required: false
+
+  - type: textarea
+    id: imagen
+    attributes:
+      label: Imagen del Paquete
       description: |
-        Tus impresiones y comentarios sobre el café.
-        
-        📸 **Para agregar una imagen del paquete:**
-        Arrastra y suelta la foto del café aquí, o pega el enlace de una imagen.
+        📸 Arrastra y suelta aquí la foto del paquete de café.
+        También puedes pegar un enlace de imagen.
         La imagen aparecerá automáticamente en el catálogo web.
-      placeholder: |
-        Describe tu experiencia con este café...
-        
-        Para subir imagen: arrastra la foto aquí o pega el enlace.
+      placeholder: "Arrastra tu imagen aquí..."
     validations:
       required: false
