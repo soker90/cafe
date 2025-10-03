@@ -33,6 +33,7 @@ jobs:
             const coffee = {
               name: null,
               origin: null,
+              region: null,
               roaster: null,
               price: null,
               rating: null,
@@ -50,7 +51,8 @@ jobs:
             // Parsing de formulario de GitHub - usando campos del form template
             const formPatterns = {
               name: /### Nombre del Café\s*\n\s*(.+)/i,
-              origin: /### Origen\s*\n\s*(.+)/i,
+              origin: /### Origen \(País\)\s*\n\s*(.+)/i,
+              region: /### Región\s*\n\s*(.+)/i,
               roaster: /### Tostador\s*\n\s*(.+)/i,
               price: /### Precio\s*\n\s*([0-9.,]+)/i,
               rating: /### Puntuación\s*\n\s*([1-5])/i,

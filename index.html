@@ -420,8 +420,12 @@
                         <input type="text" id="coffeeName" required>
                     </div>
                     <div class="form-group">
-                        <label for="coffeeOrigin">Origen</label>
+                        <label for="coffeeOrigin">Origen (País)</label>
                         <input type="text" id="coffeeOrigin" placeholder="Colombia, Brasil, etc.">
+                    </div>
+                    <div class="form-group">
+                        <label for="coffeeRegion">Región</label>
+                        <input type="text" id="coffeeRegion" placeholder="Huila, Nariño, etc.">
                     </div>
                 </div>
 
@@ -951,6 +955,7 @@
                         
                         <div style="display: flex; flex-wrap: wrap; gap: 10px; margin: 10px 0;">
                             ${coffee.origin ? `<span class="coffee-tag" style="background: #e3f2fd; color: #1565c0;">🌍 ${coffee.origin}</span>` : ''}
+                            ${coffee.region ? `<span class="coffee-tag" style="background: #e8f5e8; color: #2e7d32;">📍 ${coffee.region}</span>` : ''}
                             ${coffee.roaster ? `<span class="coffee-tag" style="background: #f3e5f5; color: #7b1fa2;">🏭 ${coffee.roaster}</span>` : ''}
                             ${coffee.process ? `<span class="coffee-process ${coffee.process.toLowerCase()}">${getProcessEmoji(coffee.process)} ${coffee.process}</span>` : ''}
                         </div>

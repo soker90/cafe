@@ -21,9 +21,18 @@ body:
   - type: input
     id: origen
     attributes:
-      label: Origen
-      description: País y región de origen
-      placeholder: "ej. Colombia, Huila"
+      label: Origen (País)
+      description: País de origen del café
+      placeholder: "ej. Colombia"
+    validations:
+      required: false
+
+  - type: input
+    id: region
+    attributes:
+      label: Región
+      description: Región específica dentro del país
+      placeholder: "ej. Huila, Nariño, Antioquia"
     validations:
       required: false
 
