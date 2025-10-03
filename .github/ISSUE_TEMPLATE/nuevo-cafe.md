@@ -15,11 +15,10 @@ assignees: ''
 **Proceso:** 
 **Variedad:** 
 **Altitud:** 
-**Peso:** 
-**Nivel de tueste:** 
 **Notas de sabor:** 
-**Foto del paquete:** 
 **Notas:** 
+
+Puedes subir una **foto del paquete** arrastrando la imagen aquí ⬇️
 
 ---
 
@@ -34,11 +33,9 @@ assignees: ''
 - **Proceso:** Método de procesado (ej: Lavado, Natural, Honey, Semi-lavado)
 - **Variedad:** Variedad del café (ej: Caturra, Geisha, Bourbon)
 - **Altitud:** Altitud en metros (ej: 1650)
-- **Peso:** Peso del paquete en gramos (ej: 250)
-- **Nivel de tueste:** Nivel de tostado (ej: Claro, Medio, Oscuro)
 - **Notas de sabor:** Lista separada por comas (ej: Chocolate, Frutas rojas, Caramelo)
-- **Foto del paquete:** URL de una imagen del paquete (opcional)
 - **Notas:** Descripción detallada, notas de cata, comentarios
+- **Foto:** Arrastra y suelta la imagen del paquete directamente en el issue
 
 ### 💡 Ejemplo completo:
 ```
@@ -51,11 +48,10 @@ assignees: ''
 **Proceso:** Lavado
 **Variedad:** Caturra
 **Altitud:** 1650
-**Peso:** 250
-**Nivel de tueste:** Medio
 **Notas de sabor:** Chocolate, Frutas rojas, Caramelo
-**Foto del paquete:** https://ejemplo.com/imagen-paquete.jpg
 **Notas:** Café con excelentes notas a chocolate y frutas rojas, cuerpo medio y acidez balanceada. Perfecto para método V60.
 ```
+
+![Foto del paquete](imagen-subida-aqui)
 
 Una vez creado el issue, el catálogo se actualizará automáticamente en unos minutos.

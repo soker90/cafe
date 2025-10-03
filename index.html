@@ -1060,7 +1060,6 @@
                 <div class="coffee-card">
                     <div class="coffee-image">
                         ${coffee.packageImage ? `<img src="${coffee.packageImage}" alt="Paquete de ${coffee.name}">` : 
-                          coffee.image ? `<img src="${coffee.image}" alt="${coffee.name}">` : 
                           '<div style="display: flex; flex-direction: column; align-items: center; gap: 10px;"><span style="font-size: 3em;">☕</span><span>Sin foto</span></div>'}
                         ${coffee.rating ? `<div class="coffee-badge">${coffee.rating} ⭐</div>` : ''}
                     </div>
@@ -1076,8 +1075,6 @@
                         ${coffee.variety ? `<div class="coffee-detail"><strong>Variedad:</strong> ${coffee.variety}</div>` : ''}
                         ${coffee.altitude ? `<div class="coffee-detail"><strong>Altitud:</strong> ${coffee.altitude} msnm</div>` : ''}
                         ${coffee.price ? `<div class="coffee-detail"><strong>Precio:</strong> ${coffee.price}€</div>` : ''}
-                        ${coffee.weight ? `<div class="coffee-detail"><strong>Peso:</strong> ${coffee.weight}g</div>` : ''}
-                        ${coffee.roastLevel ? `<div class="coffee-detail"><strong>Tueste:</strong> ${coffee.roastLevel}</div>` : ''}
                         ${coffee.purchaseDate ? `<div class="coffee-detail"><strong>Comprado:</strong> ${new Date(coffee.purchaseDate).toLocaleDateString('es-ES')}</div>` : ''}
                         
                         ${coffee.rating ? `

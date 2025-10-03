@@ -36,11 +36,8 @@ jobs:
               process: null,
               variety: null,
               altitude: null,
-              weight: null,
-              roastLevel: null,
               flavorNotes: [],
               packageImage: null,
-              image: null,
               notes: null
             };
             
@@ -57,13 +54,16 @@ jobs:
               process: /\*\*Proceso:\*\*\s*(.+)/i,
               variety: /\*\*Variedad:\*\*\s*(.+)/i,
               altitude: /\*\*Altitud:\*\*\s*([0-9]+)/i,
-              weight: /\*\*Peso:\*\*\s*([0-9]+)/i,
-              roastLevel: /\*\*Nivel de tueste:\*\*\s*(.+)/i,
               flavorNotes: /\*\*Notas de sabor:\*\*\s*(.+)/i,
-              packageImage: /\*\*Foto del paquete:\*\*\s*(https?:\/\/[^\s]+)/i,
-              image: /\*\*Imagen:\*\*\s*(https?:\/\/[^\s]+)/i,
-              notes: /\*\*Notas:\*\*\s*(.+?)(?=\*\*|$)/is
+              notes: /\*\*Notas:\*\*\s*(.+?)(?=!\[|$)/is
             };
+            
+            // Extraer imagen subida en el issue
+            const imagePattern = /!\[.*?\]\((https:\/\/[^)]+)\)/i;
+            const imageMatch = body.match(imagePattern);
+            if (imageMatch) {
+              coffee.packageImage = imageMatch[1];
+            }
             
             for (const [key, pattern] of Object.entries(patterns)) {
               const match = body.match(pattern);
@@ -75,7 +75,7 @@ jobs:
                   value = parseFloat(value.replace(',', '.'));
                 } else if (key === 'rating') {
                   value = parseInt(value);
-                } else if (key === 'altitude' || key === 'weight') {
+                } else if (key === 'altitude') {
                   value = parseInt(value);
                 } else if (key === 'flavorNotes') {
                   // Convertir lista separada por comas en array

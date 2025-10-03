@@ -28,10 +28,7 @@ Este proyecto utiliza GitHub Issues como base de datos para el catálogo de caf�
 **Proceso:** Lavado
 **Variedad:** Caturra
 **Altitud:** 1650
-**Peso:** 250
-**Nivel de tueste:** Medio
 **Notas de sabor:** Chocolate, Frutas rojas, Caramelo
-**Foto del paquete:** https://ejemplo.com/imagen-paquete.jpg
 **Notas:** Café con excelentes notas a chocolate y frutas rojas, cuerpo medio y acidez balanceada. Perfecto para método V60.
 ```
 
@@ -46,12 +43,9 @@ Este proyecto utiliza GitHub Issues como base de datos para el catálogo de caf�
 - **Proceso:** Método de procesado (ej: Lavado, Natural, Honey, Semi-lavado)
 - **Variedad:** Variedad del café (ej: Caturra, Geisha, Bourbon)
 - **Altitud:** Altitud en metros (ej: 1650)
-- **Peso:** Peso del paquete en gramos (ej: 250)
-- **Nivel de tueste:** Nivel de tostado (ej: Claro, Medio, Oscuro)
 - **Notas de sabor:** Lista separada por comas (ej: Chocolate, Frutas rojas, Caramelo)
-- **Foto del paquete:** URL de una imagen del paquete del café
-- **Imagen:** URL de una imagen del café (campo adicional/alternativo)
 - **Notas:** Descripción detallada, notas de cata, comentarios
+- **Foto:** Subir imagen arrastrando y soltando directamente en el issue
 
 ## ✏️ Cómo editar un café
 
@@ -103,11 +97,10 @@ Abre `index.html` en tu navegador o configura GitHub Pages para acceder a tu cat
 **Proceso:** Natural
 **Variedad:** Geisha
 **Altitud:** 1800
-**Peso:** 200
-**Nivel de tueste:** Claro
 **Notas de sabor:** Florales, Té blanco, Bergamota, Miel
-**Foto del paquete:** https://example.com/geisha-panama-package.jpg
 **Notas:** Café excepcional con notas florales distintivas y toques de té blanco. Acidez brillante y muy aromático. Uno de los mejores cafés que he probado.
+
+![Foto del paquete](https://example.com/geisha-panama-package.jpg)
 ```
 
 ## 🛠️ Configuración técnica
