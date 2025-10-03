@@ -87,6 +87,7 @@ body:
         - "Natural"
         - "Honey"
         - "Semi-lavado"
+        - "Anaeróbico"
         - "Otro"
     validations:
       required: false
