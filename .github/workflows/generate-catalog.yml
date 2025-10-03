@@ -47,7 +47,7 @@ jobs:
             
             if (!body) return coffee;
             
-            // Parsing de formulario de GitHub
+            // Parsing de formulario de GitHub - usando campos del form template
             const formPatterns = {
               name: /### Nombre del Café\s*\n\s*(.+)/i,
               origin: /### Origen\s*\n\s*(.+)/i,
