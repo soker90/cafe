@@ -477,7 +477,6 @@
 
     <script>
         let coffees = [];
-        
         let filteredCoffees = [];
 
         // Cargar cafés desde el JSON generado automáticamente
@@ -901,131 +900,13 @@
             location.reload();
         }
 
-        function clearStoredAuth() {
-            localStorage.removeItem('github_token');
-            localStorage.removeItem('github_user');
-            localStorage.removeItem('selected_repo');
-            userData = null;
-            selectedRepo = null;
-        }
 
-        // Función unificada para cargar datos
-        async function loadCoffees() {
-            // Si estamos en modo demostración, cargar desde localStorage
-            if (userData && userData.login === 'usuario_demo') {
-                const savedCoffees = localStorage.getItem('demo_coffees');
-                if (savedCoffees) {
-                    coffees = JSON.parse(savedCoffees);
-                } else {
-                    coffees = [];
-                }
-                displayCoffees();
-                showStatus(`📥 Cargados ${coffees.length} cafés desde almacenamiento local`, 'success');
-                return;
-            }
-            
-            // Si no, usar GitHub
-            await loadFromGitHub();
-        }
 
-        // Cargar datos desde GitHub
-        async function loadFromGitHub() {
-            try {
-                const token = localStorage.getItem('github_token');
-                const response = await fetch(`https://api.github.com/repos/${selectedRepo.full_name}/contents/${fileName}`, {
-                    headers: {
-                        'Authorization': `Bearer ${token}`,
-                        'Accept': 'application/vnd.github.v3+json'
-                    }
-                });
 
-                if (response.ok) {
-                    const data = await response.json();
-                    const content = atob(data.content);
-                    coffees = JSON.parse(content);
-                    displayCoffees();
-                    showStatus(`📥 Cargados ${coffees.length} cafés desde GitHub`, 'success');
-                } else if (response.status === 404) {
-                    coffees = [];
-                    displayCoffees();
-                    showStatus('📝 Archivo no encontrado, se creará al añadir el primer café', 'info');
-                }
-            } catch (error) {
-                showStatus('❌ Error cargando datos: ' + error.message, 'error');
-                coffees = [];
-                displayCoffees();
-            }
-        }
 
-        // Guardar en GitHub
-        // Función unificada para guardar
-        async function saveCoffees() {
-            // Si estamos en modo demostración, guardar localmente
-            if (userData && userData.login === 'usuario_demo') {
-                localStorage.setItem('demo_coffees', JSON.stringify(coffees));
-                showStatus('💾 Datos guardados localmente', 'success');
-                return;
-            }
-            
-            // Si no, usar GitHub
-            await saveCoffees();
-        }
 
-        async function saveToGitHub() {
-            try {
-                const token = localStorage.getItem('github_token');
-                
-                // Obtener SHA actual si existe
-                let sha = null;
-                try {
-                    const currentFile = await fetch(`https://api.github.com/repos/${selectedRepo.full_name}/contents/${fileName}`, {
-                        headers: {
-                            'Authorization': `Bearer ${token}`,
-                            'Accept': 'application/vnd.github.v3+json'
-                        }
-                    });
-                    
-                    if (currentFile.ok) {
-                        const currentData = await currentFile.json();
-                        sha = currentData.sha;
-                    }
-                } catch (e) {
-                    // El archivo no existe
-                }
 
-                const content = btoa(JSON.stringify(coffees, null, 2));
-                const commitData = {
-                    message: `Actualizar catálogo de cafés - ${new Date().toLocaleString('es-ES')}`,
-                    content: content
-                };
 
-                if (sha) {
-                    commitData.sha = sha;
-                }
-
-                const response = await fetch(`https://api.github.com/repos/${selectedRepo.full_name}/contents/${fileName}`, {
-                    method: 'PUT',
-                    headers: {
-                        'Authorization': `Bearer ${token}`,
-                        'Accept': 'application/vnd.github.v3+json',
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify(commitData)
-                });
-
-                if (response.ok) {
-                    showStatus('✅ Datos guardados en GitHub correctamente', 'success');
-                    return true;
-                } else {
-                    const errorData = await response.json();
-                    showStatus('❌ Error guardando en GitHub: ' + errorData.message, 'error');
-                    return false;
-                }
-            } catch (error) {
-                showStatus('❌ Error de red: ' + error.message, 'error');
-                return false;
-            }
-        }
 
         // Mostrar mensaje de estado
         function showStatus(message, type = 'info') {
@@ -1060,6 +941,8 @@
                 <div class="coffee-card">
                     <div class="coffee-image">
                         ${coffee.packageImage ? `<img src="${coffee.packageImage}" alt="Paquete de ${coffee.name}">` : 
+                          coffee.image ? `<img src="${coffee.image}" alt="${coffee.name}">` : 
+                          coffee.image ? `<img src="${coffee.image}" alt="${coffee.name}">` : 
                           '<div style="display: flex; flex-direction: column; align-items: center; gap: 10px;"><span style="font-size: 3em;">☕</span><span>Sin foto</span></div>'}
                         ${coffee.rating ? `<div class="coffee-badge">${coffee.rating} ⭐</div>` : ''}
                     </div>
@@ -1075,6 +958,10 @@
                         ${coffee.variety ? `<div class="coffee-detail"><strong>Variedad:</strong> ${coffee.variety}</div>` : ''}
                         ${coffee.altitude ? `<div class="coffee-detail"><strong>Altitud:</strong> ${coffee.altitude} msnm</div>` : ''}
                         ${coffee.price ? `<div class="coffee-detail"><strong>Precio:</strong> ${coffee.price}€</div>` : ''}
+                        ${coffee.weight ? `<div class="coffee-detail"><strong>Peso:</strong> ${coffee.weight}g</div>` : ''}
+                        ${coffee.roastLevel ? `<div class="coffee-detail"><strong>Tueste:</strong> ${coffee.roastLevel}</div>` : ''}
+                        ${coffee.weight ? `<div class="coffee-detail"><strong>Peso:</strong> ${coffee.weight}g</div>` : ''}
+                        ${coffee.roastLevel ? `<div class="coffee-detail"><strong>Tueste:</strong> ${coffee.roastLevel}</div>` : ''}
                         ${coffee.purchaseDate ? `<div class="coffee-detail"><strong>Comprado:</strong> ${new Date(coffee.purchaseDate).toLocaleDateString('es-ES')}</div>` : ''}
                         
                         ${coffee.rating ? `
