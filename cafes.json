@@ -1,1 +1,25 @@
-[]
+[
+  {
+    "name": "Paisano",
+    "origin": "Indonesia",
+    "region": "Kerinci Valley",
+    "roaster": "Paisano",
+    "price": null,
+    "rating": 5,
+    "purchaseDate": "2023-01-01",
+    "process": "Natural",
+    "variety": "Typica",
+    "altitude": 1200,
+    "flavorNotes": [
+      "Mora madura",
+      "caramelo",
+      "ciruela y chocolate con leche"
+    ],
+    "packageImage": null,
+    "notes": "Tostado en granada",
+    "issueNumber": 5,
+    "issueTitle": "[CAFÉ] Paisano Indonesia",
+    "createdAt": "2025-10-03T22:34:34Z",
+    "updatedAt": "2025-10-03T22:34:34Z"
+  }
+]
