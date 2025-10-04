@@ -1,5 +1,29 @@
 [
   {
+    "name": "Karambi",
+    "origin": "Ruanda",
+    "region": "Nyamasheke",
+    "roaster": "San Agustín",
+    "price": null,
+    "rating": null,
+    "purchaseDate": "2024-01-01",
+    "process": "Natural",
+    "variety": "Bourbon rojo",
+    "altitude": 1700,
+    "flavorNotes": [
+      "Lavanda",
+      "Guayaba",
+      "Melón",
+      "Arándanos"
+    ],
+    "packageImage": "https://github.com/user-attachments/assets/87a2360f-5638-4114-b2c8-16feadcb0e30",
+    "notes": null,
+    "issueNumber": 13,
+    "issueTitle": "[CAFÉ] San Agustín Karambi",
+    "createdAt": "2025-10-04T00:04:50Z",
+    "updatedAt": "2025-10-04T00:04:50Z"
+  },
+  {
     "name": "Galicia",
     "origin": "Brasil",
     "region": "Cerrado Mineiro, Perdizes",
