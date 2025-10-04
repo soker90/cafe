@@ -1,5 +1,29 @@
 [
   {
+    "name": "Piedra de Talco",
+    "origin": "Guatemala",
+    "region": "Quiché",
+    "roaster": "San Agustín",
+    "price": null,
+    "rating": null,
+    "purchaseDate": "2024-01-01",
+    "process": "Honey",
+    "variety": "Catuaí, Caturra, Bourbon",
+    "altitude": 1700,
+    "flavorNotes": [
+      "Chocolate",
+      "Mango",
+      "Frutos rojos",
+      "Chocolate Negro"
+    ],
+    "packageImage": "https://github.com/user-attachments/assets/1d62b411-db6f-4f8e-a145-2d77aa772b66",
+    "notes": "Un café con dulzura excepcional, cuerpo satisfactorio y acidez moderada",
+    "issueNumber": 20,
+    "issueTitle": "[CAFÉ] San Agustín Piedra de Talco",
+    "createdAt": "2025-10-04T10:25:10Z",
+    "updatedAt": "2025-10-04T10:25:10Z"
+  },
+  {
     "name": "Madriz - Nicaragua",
     "origin": "Nicaragua",
     "region": "Madriz",
