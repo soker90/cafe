@@ -1,5 +1,31 @@
 [
   {
+    "name": "Siete Puñales",
+    "origin": "Brasil, Colombia y Etiopía",
+    "region": "José Gomes, San José, Limu (Gera)",
+    "roaster": "San Agustín",
+    "price": null,
+    "rating": null,
+    "purchaseDate": "2024-01-01",
+    "process": "Lavado",
+    "variety": null,
+    "altitude": null,
+    "flavorNotes": [
+      "Pan de canela",
+      "Almendra tostada",
+      "Frutos rojos",
+      "Miel",
+      "Nuez moscada",
+      "Mandarina"
+    ],
+    "packageImage": "https://github.com/user-attachments/assets/596fe539-62d9-4f87-9a8b-04d48eb7e62c",
+    "notes": "Brasil Natural, Colombia Lavado y Etiopía Lavado Este café destaca por su fragancia de pan de canela y almendra tostada, con sutiles notas de frutos rojos y un toque cítrico de mandarina. Su cuerpo es sedoso, revelando capas de miel y nuez moscada a medida que se enfría. El final es largo, con una acidez brillante que aporta vivacidad a cada sorbo.",
+    "issueNumber": 35,
+    "issueTitle": "[CAFÉ] San Agustín Siete Puñales",
+    "createdAt": "2025-10-04T12:12:42Z",
+    "updatedAt": "2025-10-04T12:12:42Z"
+  },
+  {
     "name": "Santa Bárbara",
     "origin": "Colombia",
     "region": "Antioquia",
