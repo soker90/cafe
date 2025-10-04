@@ -289,7 +289,7 @@
     "purchaseDate": "2023-01-01",
     "process": "Anaeróbico",
     "variety": "Tabi",
-    "altitude": 1,
+    "altitude": 1850,
     "flavorNotes": [
       "Caramelo",
       "piel de naranja",
@@ -300,7 +300,7 @@
     "issueNumber": 6,
     "issueTitle": "[CAFÉ] Osorio Colombia",
     "createdAt": "2025-10-03T22:57:29Z",
-    "updatedAt": "2025-10-03T22:58:40Z"
+    "updatedAt": "2025-10-04T00:28:08Z"
   },
   {
     "name": "Paisano",
