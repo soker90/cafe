@@ -1,5 +1,30 @@
 [
   {
+    "name": "Gikirima AB",
+    "origin": "Kenia",
+    "region": "Kirinyaga",
+    "roaster": "San Agustín",
+    "price": null,
+    "rating": null,
+    "purchaseDate": "2024-01-01",
+    "process": "Lavado",
+    "variety": "Ruiru, Batian",
+    "altitude": 1800,
+    "flavorNotes": [
+      "Chocolate",
+      "Nuez",
+      "Caramelo",
+      "Frutas",
+      "Flores"
+    ],
+    "packageImage": "https://github.com/user-attachments/assets/a90c7767-035f-4906-8542-1867fb76bb64",
+    "notes": "Destaca por su dulzura excepcional, cuerpo completo y acidez equilibrada",
+    "issueNumber": 22,
+    "issueTitle": "[CAFÉ] San Agustín Gikirima AB",
+    "createdAt": "2025-10-04T10:30:55Z",
+    "updatedAt": "2025-10-04T10:30:55Z"
+  },
+  {
     "name": "Solomon Worku",
     "origin": "Etiopía",
     "region": "Yirgacheffe",
