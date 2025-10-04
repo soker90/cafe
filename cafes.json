@@ -1,5 +1,28 @@
 [
   {
+    "name": "E.Guatem.",
+    "origin": "Guatemala",
+    "region": null,
+    "roaster": "1000 cups",
+    "price": null,
+    "rating": null,
+    "purchaseDate": "2024-01-01",
+    "process": "Lavado",
+    "variety": null,
+    "altitude": 1600,
+    "flavorNotes": [
+      "Chocolate",
+      "Caramelo",
+      "Ciruela"
+    ],
+    "packageImage": "https://github.com/user-attachments/assets/954b6325-14ab-4154-ac3f-fad7fcffdbec",
+    "notes": null,
+    "issueNumber": 30,
+    "issueTitle": "[CAFÉ] 1000 cups Guatemala",
+    "createdAt": "2025-10-04T11:12:50Z",
+    "updatedAt": "2025-10-04T11:12:50Z"
+  },
+  {
     "name": "San Gabriel",
     "origin": "Perú",
     "region": "Satipo - San Miguel De Eden",
