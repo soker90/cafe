@@ -1,5 +1,29 @@
 [
   {
+    "name": "O.ElSalvador",
+    "origin": "El salvador",
+    "region": "Apaneca - llamatepec",
+    "roaster": "1000 Cups",
+    "price": null,
+    "rating": null,
+    "purchaseDate": "2024-01-01",
+    "process": "Natural Anaeróbico",
+    "variety": "Bourbon, Catuai y Caturra",
+    "altitude": 1100,
+    "flavorNotes": [
+      "Almendra",
+      "Chocolate Negro",
+      "Fruto Sobremaduro",
+      "Ciruela Pasa"
+    ],
+    "packageImage": "https://github.com/user-attachments/assets/a6014ab5-1a59-45b1-8508-c47bfad92692",
+    "notes": null,
+    "issueNumber": 28,
+    "issueTitle": "[CAFÉ] 1000 Cups El Salvador",
+    "createdAt": "2025-10-04T11:02:34Z",
+    "updatedAt": "2025-10-04T11:02:34Z"
+  },
+  {
     "name": "Las Estrellas",
     "origin": "Colombia",
     "region": "Inza, Cauca",
