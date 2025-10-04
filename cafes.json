@@ -1,5 +1,30 @@
 [
   {
+    "name": "Finca La Incea",
+    "origin": "Honduras",
+    "region": "La Paz - Santa María",
+    "roaster": "San Agustín",
+    "price": null,
+    "rating": null,
+    "purchaseDate": "2024-01-01",
+    "process": "Natural",
+    "variety": "Lempira",
+    "altitude": 1218,
+    "flavorNotes": [
+      "Frutal",
+      "Frutos rojos",
+      "Litchi",
+      "Miel",
+      "Especiado"
+    ],
+    "packageImage": "https://github.com/user-attachments/assets/b2d31f7d-8e22-425c-93f8-51c2b420520f",
+    "notes": "Café con fragancia enzimática frutal, notas de frutos rojos, litchi, miel y especiado; es dulce, delicado, afrutado, con cuerpo cremoso y acidez media",
+    "issueNumber": 32,
+    "issueTitle": "[CAFÉ] San Agustín Finca La Incea",
+    "createdAt": "2025-10-04T11:19:15Z",
+    "updatedAt": "2025-10-04T11:19:15Z"
+  },
+  {
     "name": "Kenia",
     "origin": "Kenia",
     "region": null,
