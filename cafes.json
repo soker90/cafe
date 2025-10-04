@@ -1,5 +1,30 @@
 [
   {
+    "name": "Lalesa",
+    "origin": "Etiopía",
+    "region": "Gedeb - Lalesa",
+    "roaster": "San Agustín",
+    "price": null,
+    "rating": null,
+    "purchaseDate": "2024-01-01",
+    "process": "Natural",
+    "variety": "Heirloom",
+    "altitude": 2150,
+    "flavorNotes": [
+      "Floral",
+      "Chocolate",
+      "Lavanda",
+      "Litchi",
+      "Chocolate con leche"
+    ],
+    "packageImage": "https://github.com/user-attachments/assets/fd86b957-1631-4d81-a7eb-268f603e6e28",
+    "notes": "Destaca su fragancia enzimática floral, base de chocolate y notas de lavanda, litchi y chocolate con leche; es dulce, achocolatado, con buen cuerpo y acidez media",
+    "issueNumber": 36,
+    "issueTitle": "[CAFÉ] San Agustín Lalesa",
+    "createdAt": "2025-10-04T14:24:16Z",
+    "updatedAt": "2025-10-04T14:24:16Z"
+  },
+  {
     "name": "Siete Puñales",
     "origin": "Brasil, Colombia y Etiopía",
     "region": "José Gomes, San José, Limu (Gera)",
