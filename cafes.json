@@ -1,5 +1,30 @@
 [
   {
+    "name": "Yenesh",
+    "origin": "Etiopía",
+    "region": "Wegida, Yigacheffe",
+    "roaster": "San Agustín",
+    "price": null,
+    "rating": null,
+    "purchaseDate": "2024-01-01",
+    "process": "Natural",
+    "variety": "Heirloom",
+    "altitude": 2550,
+    "flavorNotes": [
+      "Floral",
+      "Chocolate",
+      "Caramelo",
+      "Cítrico",
+      "Flor blanca"
+    ],
+    "packageImage": "https://github.com/user-attachments/assets/db502a8e-b607-4811-9204-e6640e2681ae",
+    "notes": "Es un café redondo, dulce, delicado, con cuerpo meloso y acidez alta",
+    "issueNumber": 25,
+    "issueTitle": "[CAFÉ] San Agustín Yenesh",
+    "createdAt": "2025-10-04T10:44:27Z",
+    "updatedAt": "2025-10-04T10:44:27Z"
+  },
+  {
     "name": "Bensa Kokosa",
     "origin": "Etiopía",
     "region": "Bensa Kokose",
