@@ -1,5 +1,30 @@
 [
   {
+    "name": "San Gabriel",
+    "origin": "Perú",
+    "region": "Satipo - San Miguel De Eden",
+    "roaster": "San Agustín",
+    "price": null,
+    "rating": null,
+    "purchaseDate": "2024-01-01",
+    "process": "Lavado",
+    "variety": "Geisha",
+    "altitude": 1600,
+    "flavorNotes": [
+      "Floral",
+      "Chocolate",
+      "Flor Blanca",
+      "Jazmín",
+      "Almendra"
+    ],
+    "packageImage": "https://github.com/user-attachments/assets/3384d76a-1dab-40f6-8553-f71521eca92e",
+    "notes": "Este café se caracteriza por su fragancia enzimática floral, con una base de chocolate y notas de flor blanca, evocando al jazmín. Presenta matices de almendra en boca, resaltando su dulzura. Es un café claramente de la variedad Geisha, distinguido por su buen cuerpo y una acidez media",
+    "issueNumber": 29,
+    "issueTitle": "[CAFÉ] San Agustín San Gabriel",
+    "createdAt": "2025-10-04T11:06:33Z",
+    "updatedAt": "2025-10-04T11:06:33Z"
+  },
+  {
     "name": "O.ElSalvador",
     "origin": "El salvador",
     "region": "Apaneca - llamatepec",
