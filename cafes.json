@@ -1,5 +1,28 @@
 [
   {
+    "name": "Santa Bárbara",
+    "origin": "Colombia",
+    "region": "Antioquia",
+    "roaster": "San Agustín",
+    "price": null,
+    "rating": null,
+    "purchaseDate": "2024-01-01",
+    "process": "Lavado",
+    "variety": "Colombia",
+    "altitude": 1650,
+    "flavorNotes": [
+      "Flor",
+      "Cacao",
+      "Cítrico"
+    ],
+    "packageImage": "https://github.com/user-attachments/assets/0f3d6f20-5daa-441c-9d99-d3cc45496e10",
+    "notes": "Mezcla de flor y cacao, muy fragante, ligeros cítricos en nariz que más tarde aparecen en boca y dan lugar a una acidez claramente cítrica. Muy fino y rico. Ligeras notas a almendra, acidez y dulzor equilibrados y buen cuerpo resultando un café excelente.",
+    "issueNumber": 34,
+    "issueTitle": "[CAFÉ] San Agustín Santa Bárbara",
+    "createdAt": "2025-10-04T12:08:19Z",
+    "updatedAt": "2025-10-04T12:08:19Z"
+  },
+  {
     "name": "Los Juiciosos",
     "origin": "Colombia",
     "region": "Guadalupe, Huila",
