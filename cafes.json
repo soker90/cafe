@@ -1,5 +1,28 @@
 [
   {
+    "name": "Guji Uraga",
+    "origin": "Etiopía",
+    "region": "Uraga",
+    "roaster": "San Agustín",
+    "price": null,
+    "rating": null,
+    "purchaseDate": "2024-01-01",
+    "process": "Natural",
+    "variety": "Heirloom",
+    "altitude": 2100,
+    "flavorNotes": [
+      "Fragancia melosa",
+      "Chocolate",
+      "Fruta roja"
+    ],
+    "packageImage": "https://github.com/user-attachments/assets/2cb15eb7-fb87-4d38-8006-382a9b91742c",
+    "notes": "Tiene acidez media dulce y cuerpo cremoso",
+    "issueNumber": 17,
+    "issueTitle": "[CAFÉ] San Agustín Guji Uraga",
+    "createdAt": "2025-10-04T00:24:29Z",
+    "updatedAt": "2025-10-04T00:24:29Z"
+  },
+  {
     "name": "Friedhats",
     "origin": "Kenya",
     "region": "Kirinyaga",
