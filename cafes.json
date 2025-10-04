@@ -1,5 +1,31 @@
 [
   {
+    "name": "El Capitán",
+    "origin": "Costa Rica",
+    "region": "Valle Central - Santa Ana",
+    "roaster": "San Agustín",
+    "price": null,
+    "rating": null,
+    "purchaseDate": "2024-01-01",
+    "process": "Natural Anaeróbico",
+    "variety": "San Isidro",
+    "altitude": 1400,
+    "flavorNotes": [
+      "Frutal",
+      "Chocolate",
+      "Fresa",
+      "Frutos rojos",
+      "Miel",
+      "Floral"
+    ],
+    "packageImage": "https://github.com/user-attachments/assets/e8cf3d4e-d17e-4db0-8ab8-90cc55c3bb05",
+    "notes": "Es un café complejo, dulce, afrutado, con cuerpo meloso y jugoso y acidez alta",
+    "issueNumber": 26,
+    "issueTitle": "[CAFÉ] San Agustín El Capitán",
+    "createdAt": "2025-10-04T10:49:19Z",
+    "updatedAt": "2025-10-04T10:49:19Z"
+  },
+  {
     "name": "Yenesh",
     "origin": "Etiopía",
     "region": "Wegida, Yigacheffe",
