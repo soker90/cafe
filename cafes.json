@@ -1,5 +1,29 @@
 [
   {
+    "name": "Solomon Worku",
+    "origin": "Etiopía",
+    "region": "Yirgacheffe",
+    "roaster": "San Agustín",
+    "price": null,
+    "rating": null,
+    "purchaseDate": "2024-01-01",
+    "process": "Natural",
+    "variety": "Dega",
+    "altitude": 1950,
+    "flavorNotes": [
+      "Chocolate",
+      "Naranja",
+      "Floral",
+      "Caramelo"
+    ],
+    "packageImage": "https://github.com/user-attachments/assets/152a6595-c03f-442a-873e-d28da8b28c9d",
+    "notes": "Es un café dulce, redondo, completo, con cuerpo jugoso y acidez alta",
+    "issueNumber": 21,
+    "issueTitle": "[CAFÉ] San Agustín Solomon Worku",
+    "createdAt": "2025-10-04T10:27:53Z",
+    "updatedAt": "2025-10-04T10:27:53Z"
+  },
+  {
     "name": "Piedra de Talco",
     "origin": "Guatemala",
     "region": "Quiché",
