@@ -1,5 +1,29 @@
 [
   {
+    "name": "Madriz - Nicaragua",
+    "origin": "Nicaragua",
+    "region": "Madriz",
+    "roaster": "San Agustín",
+    "price": null,
+    "rating": 4,
+    "purchaseDate": "2024-01-01",
+    "process": "Natural",
+    "variety": "Pacamara Amarillo",
+    "altitude": 1300,
+    "flavorNotes": [
+      "Fresa",
+      "Chocolate",
+      "Frutos rojos",
+      "Chuchamel"
+    ],
+    "packageImage": "https://github.com/user-attachments/assets/eefc7613-521a-418e-96da-b0aa13eaece7",
+    "notes": "Es un café completo, intenso, con buen cuerpo y acidez alta",
+    "issueNumber": 19,
+    "issueTitle": "[CAFÉ] San Agustín Madriz",
+    "createdAt": "2025-10-04T10:21:40Z",
+    "updatedAt": "2025-10-04T10:21:40Z"
+  },
+  {
     "name": "La Joya - Honduras",
     "origin": "Honduras",
     "region": "La Paz, Santa Ana",
