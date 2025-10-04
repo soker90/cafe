@@ -1,5 +1,29 @@
 [
   {
+    "name": "La lucuma",
+    "origin": "Perú",
+    "region": null,
+    "roaster": "Syra Coffee",
+    "price": null,
+    "rating": 2,
+    "purchaseDate": "2024-01-01",
+    "process": "Natural",
+    "variety": "Marshell",
+    "altitude": 1750,
+    "flavorNotes": [
+      "Ciruela",
+      "Uva",
+      "Cacao",
+      "Frutos rojos"
+    ],
+    "packageImage": "https://github.com/user-attachments/assets/c07b60dd-bf17-4005-95db-0925bc1af706",
+    "notes": null,
+    "issueNumber": 23,
+    "issueTitle": "[CAFÉ] Syra La lucuma",
+    "createdAt": "2025-10-04T10:34:56Z",
+    "updatedAt": "2025-10-04T10:34:56Z"
+  },
+  {
     "name": "Gikirima AB",
     "origin": "Kenia",
     "region": "Kirinyaga",
