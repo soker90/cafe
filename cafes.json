@@ -1,5 +1,28 @@
 [
   {
+    "name": "Flor de San Juan",
+    "origin": "Nicaragua",
+    "region": "San Juan de Río Coco",
+    "roaster": "San Agustín",
+    "price": null,
+    "rating": 4,
+    "purchaseDate": "2024-01-01",
+    "process": "Lavado",
+    "variety": "Java",
+    "altitude": 1300,
+    "flavorNotes": [
+      "Flor blanca",
+      "Frutales",
+      "Jazmín"
+    ],
+    "packageImage": "https://github.com/user-attachments/assets/c894bc1c-43cc-4e1d-a634-8886006ff69c",
+    "notes": "Su sabor es meloso y suave, parece un Geisha, con un cuerpo bien definido y una acidez media/alta",
+    "issueNumber": 15,
+    "issueTitle": "[CAFÉ] San Agustín Nicaragua",
+    "createdAt": "2025-10-04T00:13:17Z",
+    "updatedAt": "2025-10-04T00:13:17Z"
+  },
+  {
     "name": "Bujumbura",
     "origin": "Burundi",
     "region": "Bujumbura",
