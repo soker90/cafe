@@ -1,5 +1,28 @@
 [
   {
+    "name": "Los Juiciosos",
+    "origin": "Colombia",
+    "region": "Guadalupe, Huila",
+    "roaster": "Right Side",
+    "price": null,
+    "rating": null,
+    "purchaseDate": "2024-01-01",
+    "process": "Lavado",
+    "variety": "Castillo",
+    "altitude": null,
+    "flavorNotes": [
+      "Pera",
+      "Miel",
+      "Almendra"
+    ],
+    "packageImage": "https://github.com/user-attachments/assets/1123b52f-3d72-41d6-9f7f-d88d721b66a3",
+    "notes": null,
+    "issueNumber": 33,
+    "issueTitle": "[CAFÉ] Los Juiciosos",
+    "createdAt": "2025-10-04T12:05:10Z",
+    "updatedAt": "2025-10-04T12:05:10Z"
+  },
+  {
     "name": "Finca La Incea",
     "origin": "Honduras",
     "region": "La Paz - Santa María",
