@@ -89,6 +89,7 @@ body:
         - "Red Honey"
         - "Semi-lavado"
         - "Anaeróbico"
+        - "Natural Anaeróbico"
         - "Otro"
     validations:
       required: false
