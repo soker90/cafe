@@ -1,5 +1,29 @@
 [
   {
+    "name": "Las Estrellas",
+    "origin": "Colombia",
+    "region": "Inza, Cauca",
+    "roaster": "San Agustín",
+    "price": null,
+    "rating": null,
+    "purchaseDate": "2024-01-01",
+    "process": "Lavado",
+    "variety": "Caturra, Bourbon, Típica",
+    "altitude": 1750,
+    "flavorNotes": [
+      "Miel",
+      "Frutas",
+      "Manzana",
+      "Albaricoque"
+    ],
+    "packageImage": "https://github.com/user-attachments/assets/2a2fe5e6-6606-401d-af8d-1389ef5c2850",
+    "notes": "Este café cautiva con su profundo dulzor de miel y variedad de frutas. Los aromas de manzana y frutas almibaradas se entrelazan con destellos de albaricoque seco. Concluye con una elegante nota de té negro, ideal para un espresso memorable",
+    "issueNumber": 27,
+    "issueTitle": "[CAFÉ] San Agustín Las Estrellas",
+    "createdAt": "2025-10-04T10:53:17Z",
+    "updatedAt": "2025-10-04T10:53:17Z"
+  },
+  {
     "name": "El Capitán",
     "origin": "Costa Rica",
     "region": "Valle Central - Santa Ana",
