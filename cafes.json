@@ -1,5 +1,28 @@
 [
   {
+    "name": "Friedhats",
+    "origin": "Kenya",
+    "region": "Kirinyaga",
+    "roaster": "Friedhats",
+    "price": null,
+    "rating": null,
+    "purchaseDate": "2025-01-01",
+    "process": "Lavado",
+    "variety": "Ruiru, Batian",
+    "altitude": 1750,
+    "flavorNotes": [
+      "Lima",
+      "Manzana verde",
+      "Bayas rojas"
+    ],
+    "packageImage": "https://github.com/user-attachments/assets/853ea0bf-b933-4db9-845f-dea6316bd2f4",
+    "notes": null,
+    "issueNumber": 16,
+    "issueTitle": "[CAFÉ] Friedhats",
+    "createdAt": "2025-10-04T00:20:20Z",
+    "updatedAt": "2025-10-04T00:20:20Z"
+  },
+  {
     "name": "Flor de San Juan",
     "origin": "Nicaragua",
     "region": "San Juan de Río Coco",
