@@ -1,5 +1,29 @@
 [
   {
+    "name": "Bujumbura",
+    "origin": "Burundi",
+    "region": "Bujumbura",
+    "roaster": "San Agustín",
+    "price": null,
+    "rating": null,
+    "purchaseDate": "2024-01-01",
+    "process": "Natural",
+    "variety": "Bourbon",
+    "altitude": 1171,
+    "flavorNotes": [
+      "Miel",
+      "Chocolate",
+      "Fruta roja",
+      "Mango"
+    ],
+    "packageImage": "https://github.com/user-attachments/assets/a4c167f0-dd6e-4adf-83fe-9cbd4cda79fe",
+    "notes": "Es un café dulce, redondo, con cuerpo y acidez media",
+    "issueNumber": 14,
+    "issueTitle": "[CAFÉ] San Agustín",
+    "createdAt": "2025-10-04T00:09:37Z",
+    "updatedAt": "2025-10-04T00:09:37Z"
+  },
+  {
     "name": "Karambi",
     "origin": "Ruanda",
     "region": "Nyamasheke",
