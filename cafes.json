@@ -1,5 +1,30 @@
 [
   {
+    "name": "Bensa Kokosa",
+    "origin": "Etiopía",
+    "region": "Bensa Kokose",
+    "roaster": "San Agustín",
+    "price": null,
+    "rating": null,
+    "purchaseDate": "2024-01-01",
+    "process": "Natural",
+    "variety": "Heirloom",
+    "altitude": 2100,
+    "flavorNotes": [
+      "Floral",
+      "Té",
+      "Caramelo",
+      "Nuez",
+      "Flor blanca"
+    ],
+    "packageImage": "https://github.com/user-attachments/assets/d19fe6f8-61d1-4a23-8b20-9483edbf66d1",
+    "notes": "Es una opción completa con dulzura, notas florales, cuerpo satisfactorio y una acidez marcada.",
+    "issueNumber": 24,
+    "issueTitle": "[CAFÉ] San Agustín Bensa Kokosa",
+    "createdAt": "2025-10-04T10:39:10Z",
+    "updatedAt": "2025-10-04T10:39:10Z"
+  },
+  {
     "name": "La lucuma",
     "origin": "Perú",
     "region": null,
