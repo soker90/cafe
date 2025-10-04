@@ -1,5 +1,28 @@
 [
   {
+    "name": "La Joya - Honduras",
+    "origin": "Honduras",
+    "region": "La Paz, Santa Ana",
+    "roaster": "San Agustín",
+    "price": null,
+    "rating": null,
+    "purchaseDate": "2024-01-01",
+    "process": "Natural",
+    "variety": "Catuaí",
+    "altitude": 1600,
+    "flavorNotes": [
+      "Chocolate",
+      "Fresa ácida",
+      "uva pasa"
+    ],
+    "packageImage": "https://github.com/user-attachments/assets/f54fa637-6bac-4892-a924-eb93ecd80cf6",
+    "notes": "Complejo, con acidez media/alta, dulce y cremoso",
+    "issueNumber": 18,
+    "issueTitle": "[CAFÉ] San Agustín La Joya",
+    "createdAt": "2025-10-04T00:27:19Z",
+    "updatedAt": "2025-10-04T00:27:19Z"
+  },
+  {
     "name": "Guji Uraga",
     "origin": "Etiopía",
     "region": "Uraga",
