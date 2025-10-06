@@ -2,8 +2,7 @@
 
 [![Made with Claude AI](https://img.shields.io/badge/Made%20with-Claude%20AI-orange?style=flat-square&logo=anthropic)](https://claude.ai)
 [![GitHub Actions](https://img.shields.io/github/actions/workflow/status/soker90/cafe/generate-catalog.yml?style=flat-square&logo=github-actions&label=Catalog%20Generation)](https://github.com/soker90/cafe/actions)
-[![Cafés abiertos](https://img.shields.io/github/issues/search?query=repo%3Asoker90/cafe+label%3Acafe+state%3Aopen&label=Caf%C3%A9s%20abiertos&color=brightgreen&style=flat-square)](https://github.com/soker90/cafe/issues?q=is%3Aopen+label%3Acafe)
-[![Cefes](https://img.shields.io/github/issues/search?query=repo%3Asoker90/cafe+label%3Acafe&label=Cefes&color=orange&style=flat-square)](https://github.com/soker90/cafe/issues?q=label%3Acafe)
+[![Café](https://img.shields.io/github/issues-search?query=repo%3Asoker90%2Fcafe+label%3Acafe&label=Caf%C3%A9&color=orange&style=flat-square&logo=github)](https://github.com/soker90/cafe/issues?q=label%3Acafe)
 
 Un catálogo personal de cafés que se actualiza automáticamente desde GitHub Issues.
 
