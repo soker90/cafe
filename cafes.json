@@ -1,5 +1,26 @@
 [
   {
+    "name": "Extra",
+    "origin": "Bolivia",
+    "region": null,
+    "roaster": "doubleshot",
+    "price": null,
+    "rating": null,
+    "purchaseDate": "2025-01-01",
+    "process": "Natural",
+    "variety": "Caturra",
+    "altitude": null,
+    "flavorNotes": [
+      "Frutal"
+    ],
+    "packageImage": "https://github.com/user-attachments/assets/538f245f-0b29-4c8b-acd0-b3cbfd196512",
+    "notes": null,
+    "issueNumber": 43,
+    "issueTitle": "[CAFÉ] Extra",
+    "createdAt": "2025-10-06T07:40:35Z",
+    "updatedAt": "2025-10-06T07:40:35Z"
+  },
+  {
     "name": "Farm",
     "origin": "Colombia",
     "region": null,
