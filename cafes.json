@@ -1,5 +1,28 @@
 [
   {
+    "name": "Pergamino",
+    "origin": "Colombia",
+    "region": "Inzá - Agua Blanca",
+    "roaster": "San Agustín",
+    "price": null,
+    "rating": null,
+    "purchaseDate": "2024-01-01",
+    "process": "Lavado",
+    "variety": "Caturra",
+    "altitude": 1700,
+    "flavorNotes": [
+      "Chocolate",
+      "Melocotón",
+      "Frutas amarillas"
+    ],
+    "packageImage": "https://github.com/user-attachments/assets/20ae415b-6d64-4c33-9fc9-c630ce1000fb",
+    "notes": "Este café sobresale por su aroma enzimático y frutal, con una base chocolatada y notas de melocotón y frutas amarillas. Es dulce y afrutado, con un cuerpo cremoso, una textura melosa y una acidez media-alta",
+    "issueNumber": 38,
+    "issueTitle": "[CAFÉ] San Agustín Pergamino",
+    "createdAt": "2025-10-06T07:21:28Z",
+    "updatedAt": "2025-10-06T07:21:28Z"
+  },
+  {
     "name": "La Cabaña",
     "origin": "Colombia",
     "region": "Bruselas - Pitalito",
