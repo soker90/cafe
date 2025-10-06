@@ -123,6 +123,8 @@ jobs:
               coffee.createdAt = issue.created_at;
               coffee.updatedAt = issue.updated_at;
               coffee.state = issue.state; // open | closed
+              // Campo derivado: current = true si el issue está abierto
+              coffee.current = (issue.state === 'open');
               
               // Si no hay nombre, usar el título del issue
               if (!coffee.name) {

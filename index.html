@@ -108,6 +108,23 @@
             font-weight: bold;
         }
 
+        .coffee-current {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: linear-gradient(135deg, #28a745 0%, #2ecc71 100%);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 11px;
+            font-weight: bold;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            letter-spacing: .5px;
+        }
+
         .coffee-info {
             padding: 20px;
             display: flex;
@@ -892,6 +909,7 @@
                           coffee.image ? `<img src="${coffee.image}" alt="${coffee.name}">` : 
                           coffee.image ? `<img src="${coffee.image}" alt="${coffee.name}">` : 
                           '<div style="display: flex; flex-direction: column; align-items: center; gap: 10px;"><span style="font-size: 3em;">☕</span><span>Sin foto</span></div>'}
+                                                ${(coffee.state === 'open' || !coffee.state) ? '<div class="coffee-current">☕ Tomando ahora</div>' : ''}
                         ${coffee.rating ? `<div class="coffee-badge">${coffee.rating} ⭐</div>` : ''}
                     </div>
                     <div class="coffee-info">
