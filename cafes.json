@@ -1,5 +1,30 @@
 [
   {
+    "name": "Burundi",
+    "origin": "Burundi",
+    "region": "Rugazi - Muyinga",
+    "roaster": "Quiero Coffee",
+    "price": null,
+    "rating": null,
+    "purchaseDate": "2025-01-01",
+    "process": "Honey",
+    "variety": "Bourbon",
+    "altitude": 1425,
+    "flavorNotes": [
+      "Mel",
+      "Chocolate",
+      "Nuez",
+      "Fruta deshidratada",
+      "Fruta roja"
+    ],
+    "packageImage": "https://github.com/user-attachments/assets/b784da53-673b-45dc-bdbb-f1b8dbf20156",
+    "notes": null,
+    "issueNumber": 48,
+    "issueTitle": "[CAFÉ] Quiero Coffee Burundi",
+    "createdAt": "2025-10-06T07:55:30Z",
+    "updatedAt": "2025-10-06T07:55:30Z"
+  },
+  {
     "name": "Rwanda",
     "origin": "Ruanda",
     "region": "Western-Nyanasgeje, Kivu-vilo",
