@@ -16,7 +16,9 @@
     "issueNumber": 49,
     "issueTitle": "[CAFÉ] Alquimia",
     "createdAt": "2025-10-06T07:58:42Z",
-    "updatedAt": "2025-10-06T16:29:42Z"
+    "updatedAt": "2025-10-06T16:38:52Z",
+    "state": "open",
+    "current": true
   },
   {
     "name": "Burundi",
@@ -41,7 +43,9 @@
     "issueNumber": 48,
     "issueTitle": "[CAFÉ] Quiero Coffee Burundi",
     "createdAt": "2025-10-06T07:55:30Z",
-    "updatedAt": "2025-10-06T16:31:12Z"
+    "updatedAt": "2025-10-06T16:33:38Z",
+    "state": "closed",
+    "current": false
   },
   {
     "name": "Rwanda",
@@ -64,7 +68,9 @@
     "issueNumber": 47,
     "issueTitle": "[CAFÉ] Libis",
     "createdAt": "2025-10-06T07:53:32Z",
-    "updatedAt": "2025-10-06T16:31:11Z"
+    "updatedAt": "2025-10-06T16:33:38Z",
+    "state": "closed",
+    "current": false
   },
   {
     "name": "Espresso",
@@ -87,7 +93,9 @@
     "issueNumber": 46,
     "issueTitle": "[CAFÉ] Right Side Descafeinado",
     "createdAt": "2025-10-06T07:50:13Z",
-    "updatedAt": "2025-10-06T16:31:11Z"
+    "updatedAt": "2025-10-06T16:33:38Z",
+    "state": "closed",
+    "current": false
   },
   {
     "name": "El salvador",
@@ -110,7 +118,9 @@
     "issueNumber": 45,
     "issueTitle": "[CAFÉ] Gota El salvador",
     "createdAt": "2025-10-06T07:47:39Z",
-    "updatedAt": "2025-10-06T16:31:10Z"
+    "updatedAt": "2025-10-06T16:33:37Z",
+    "state": "closed",
+    "current": false
   },
   {
     "name": "Etiopía",
@@ -135,7 +145,9 @@
     "issueNumber": 44,
     "issueTitle": "[CAFÉ] Talento Etiopía",
     "createdAt": "2025-10-06T07:43:40Z",
-    "updatedAt": "2025-10-06T16:31:10Z"
+    "updatedAt": "2025-10-06T16:33:37Z",
+    "state": "closed",
+    "current": false
   },
   {
     "name": "Extra",
@@ -156,7 +168,9 @@
     "issueNumber": 43,
     "issueTitle": "[CAFÉ] Extra",
     "createdAt": "2025-10-06T07:40:35Z",
-    "updatedAt": "2025-10-06T16:31:09Z"
+    "updatedAt": "2025-10-06T16:33:37Z",
+    "state": "closed",
+    "current": false
   },
   {
     "name": "Farm",
@@ -177,7 +191,9 @@
     "issueNumber": 42,
     "issueTitle": "[CAFÉ] Farm",
     "createdAt": "2025-10-06T07:36:37Z",
-    "updatedAt": "2025-10-06T16:31:09Z"
+    "updatedAt": "2025-10-06T16:33:36Z",
+    "state": "closed",
+    "current": false
   },
   {
     "name": "Las Flores",
@@ -204,7 +220,9 @@
     "issueNumber": 41,
     "issueTitle": "[CAFÉ] San Agustín Las Flores",
     "createdAt": "2025-10-06T07:31:00Z",
-    "updatedAt": "2025-10-06T16:31:08Z"
+    "updatedAt": "2025-10-06T16:33:36Z",
+    "state": "closed",
+    "current": false
   },
   {
     "name": "Rio Ocho",
@@ -230,7 +248,9 @@
     "issueNumber": 40,
     "issueTitle": "[CAFÉ] San Agustín Rio Ocho",
     "createdAt": "2025-10-06T07:27:37Z",
-    "updatedAt": "2025-10-06T16:31:08Z"
+    "updatedAt": "2025-10-06T16:33:36Z",
+    "state": "closed",
+    "current": false
   },
   {
     "name": "Lorayne",
@@ -254,7 +274,9 @@
     "issueNumber": 39,
     "issueTitle": "[CAFÉ] San Agustín Lorayne",
     "createdAt": "2025-10-06T07:24:19Z",
-    "updatedAt": "2025-10-06T16:31:08Z"
+    "updatedAt": "2025-10-06T16:33:35Z",
+    "state": "closed",
+    "current": false
   },
   {
     "name": "Pergamino",
@@ -277,7 +299,9 @@
     "issueNumber": 38,
     "issueTitle": "[CAFÉ] San Agustín Pergamino",
     "createdAt": "2025-10-06T07:21:28Z",
-    "updatedAt": "2025-10-06T16:31:07Z"
+    "updatedAt": "2025-10-06T16:33:35Z",
+    "state": "closed",
+    "current": false
   },
   {
     "name": "La Cabaña",
@@ -301,7 +325,9 @@
     "issueNumber": 37,
     "issueTitle": "[CAFÉ] San Agustín La Cabaña",
     "createdAt": "2025-10-06T07:08:41Z",
-    "updatedAt": "2025-10-06T16:31:07Z"
+    "updatedAt": "2025-10-06T16:33:35Z",
+    "state": "closed",
+    "current": false
   },
   {
     "name": "Lalesa",
@@ -326,7 +352,9 @@
     "issueNumber": 36,
     "issueTitle": "[CAFÉ] San Agustín Lalesa",
     "createdAt": "2025-10-04T14:24:16Z",
-    "updatedAt": "2025-10-06T16:31:06Z"
+    "updatedAt": "2025-10-06T16:33:34Z",
+    "state": "closed",
+    "current": false
   },
   {
     "name": "Siete Puñales",
@@ -352,7 +380,9 @@
     "issueNumber": 35,
     "issueTitle": "[CAFÉ] San Agustín Siete Puñales",
     "createdAt": "2025-10-04T12:12:42Z",
-    "updatedAt": "2025-10-06T16:31:06Z"
+    "updatedAt": "2025-10-06T16:33:34Z",
+    "state": "closed",
+    "current": false
   },
   {
     "name": "Santa Bárbara",
@@ -375,7 +405,9 @@
     "issueNumber": 34,
     "issueTitle": "[CAFÉ] San Agustín Santa Bárbara",
     "createdAt": "2025-10-04T12:08:19Z",
-    "updatedAt": "2025-10-06T16:31:05Z"
+    "updatedAt": "2025-10-06T16:33:33Z",
+    "state": "closed",
+    "current": false
   },
   {
     "name": "Los Juiciosos",
@@ -398,7 +430,9 @@
     "issueNumber": 33,
     "issueTitle": "[CAFÉ] Los Juiciosos",
     "createdAt": "2025-10-04T12:05:10Z",
-    "updatedAt": "2025-10-06T16:31:05Z"
+    "updatedAt": "2025-10-06T16:33:33Z",
+    "state": "closed",
+    "current": false
   },
   {
     "name": "Finca La Incea",
@@ -423,7 +457,9 @@
     "issueNumber": 32,
     "issueTitle": "[CAFÉ] San Agustín Finca La Incea",
     "createdAt": "2025-10-04T11:19:15Z",
-    "updatedAt": "2025-10-06T16:31:05Z"
+    "updatedAt": "2025-10-06T16:33:33Z",
+    "state": "closed",
+    "current": false
   },
   {
     "name": "Kenia",
@@ -448,7 +484,9 @@
     "issueNumber": 31,
     "issueTitle": "[CAFÉ] 1000 cups Kenia",
     "createdAt": "2025-10-04T11:15:12Z",
-    "updatedAt": "2025-10-06T16:31:04Z"
+    "updatedAt": "2025-10-06T16:33:32Z",
+    "state": "closed",
+    "current": false
   },
   {
     "name": "E.Guatem.",
@@ -471,7 +509,9 @@
     "issueNumber": 30,
     "issueTitle": "[CAFÉ] 1000 cups Guatemala",
     "createdAt": "2025-10-04T11:12:50Z",
-    "updatedAt": "2025-10-06T16:31:04Z"
+    "updatedAt": "2025-10-06T16:33:32Z",
+    "state": "closed",
+    "current": false
   },
   {
     "name": "San Gabriel",
@@ -496,7 +536,9 @@
     "issueNumber": 29,
     "issueTitle": "[CAFÉ] San Agustín San Gabriel",
     "createdAt": "2025-10-04T11:06:33Z",
-    "updatedAt": "2025-10-06T16:31:03Z"
+    "updatedAt": "2025-10-06T16:33:32Z",
+    "state": "closed",
+    "current": false
   },
   {
     "name": "O.ElSalvador",
@@ -520,7 +562,9 @@
     "issueNumber": 28,
     "issueTitle": "[CAFÉ] 1000 Cups El Salvador",
     "createdAt": "2025-10-04T11:02:34Z",
-    "updatedAt": "2025-10-06T16:31:03Z"
+    "updatedAt": "2025-10-06T16:33:31Z",
+    "state": "closed",
+    "current": false
   },
   {
     "name": "Las Estrellas",
@@ -544,7 +588,9 @@
     "issueNumber": 27,
     "issueTitle": "[CAFÉ] San Agustín Las Estrellas",
     "createdAt": "2025-10-04T10:53:17Z",
-    "updatedAt": "2025-10-06T16:31:03Z"
+    "updatedAt": "2025-10-06T16:33:31Z",
+    "state": "closed",
+    "current": false
   },
   {
     "name": "El Capitán",
@@ -570,7 +616,9 @@
     "issueNumber": 26,
     "issueTitle": "[CAFÉ] San Agustín El Capitán",
     "createdAt": "2025-10-04T10:49:19Z",
-    "updatedAt": "2025-10-06T16:31:02Z"
+    "updatedAt": "2025-10-06T16:33:31Z",
+    "state": "closed",
+    "current": false
   },
   {
     "name": "Yenesh",
@@ -595,7 +643,9 @@
     "issueNumber": 25,
     "issueTitle": "[CAFÉ] San Agustín Yenesh",
     "createdAt": "2025-10-04T10:44:27Z",
-    "updatedAt": "2025-10-06T16:31:02Z"
+    "updatedAt": "2025-10-06T16:33:30Z",
+    "state": "closed",
+    "current": false
   },
   {
     "name": "Bensa Kokosa",
@@ -620,7 +670,9 @@
     "issueNumber": 24,
     "issueTitle": "[CAFÉ] San Agustín Bensa Kokosa",
     "createdAt": "2025-10-04T10:39:10Z",
-    "updatedAt": "2025-10-06T16:13:41Z"
+    "updatedAt": "2025-10-06T16:33:30Z",
+    "state": "closed",
+    "current": false
   },
   {
     "name": "La lucuma",
@@ -644,7 +696,9 @@
     "issueNumber": 23,
     "issueTitle": "[CAFÉ] Syra La lucuma",
     "createdAt": "2025-10-04T10:34:56Z",
-    "updatedAt": "2025-10-06T16:13:41Z"
+    "updatedAt": "2025-10-06T16:33:55Z",
+    "state": "closed",
+    "current": false
   },
   {
     "name": "Gikirima AB",
@@ -669,7 +723,9 @@
     "issueNumber": 22,
     "issueTitle": "[CAFÉ] San Agustín Gikirima AB",
     "createdAt": "2025-10-04T10:30:55Z",
-    "updatedAt": "2025-10-06T16:13:41Z"
+    "updatedAt": "2025-10-06T16:33:55Z",
+    "state": "closed",
+    "current": false
   },
   {
     "name": "Solomon Worku",
@@ -693,7 +749,9 @@
     "issueNumber": 21,
     "issueTitle": "[CAFÉ] San Agustín Solomon Worku",
     "createdAt": "2025-10-04T10:27:53Z",
-    "updatedAt": "2025-10-06T16:13:40Z"
+    "updatedAt": "2025-10-06T16:33:54Z",
+    "state": "closed",
+    "current": false
   },
   {
     "name": "Piedra de Talco",
@@ -717,7 +775,9 @@
     "issueNumber": 20,
     "issueTitle": "[CAFÉ] San Agustín Piedra de Talco",
     "createdAt": "2025-10-04T10:25:10Z",
-    "updatedAt": "2025-10-06T16:13:40Z"
+    "updatedAt": "2025-10-06T16:33:54Z",
+    "state": "closed",
+    "current": false
   },
   {
     "name": "Madriz - Nicaragua",
@@ -741,7 +801,9 @@
     "issueNumber": 19,
     "issueTitle": "[CAFÉ] San Agustín Madriz",
     "createdAt": "2025-10-04T10:21:40Z",
-    "updatedAt": "2025-10-06T16:13:39Z"
+    "updatedAt": "2025-10-06T16:33:53Z",
+    "state": "closed",
+    "current": false
   },
   {
     "name": "La Joya - Honduras",
@@ -764,7 +826,9 @@
     "issueNumber": 18,
     "issueTitle": "[CAFÉ] San Agustín La Joya",
     "createdAt": "2025-10-04T00:27:19Z",
-    "updatedAt": "2025-10-06T16:13:39Z"
+    "updatedAt": "2025-10-06T16:33:53Z",
+    "state": "closed",
+    "current": false
   },
   {
     "name": "Guji Uraga",
@@ -787,7 +851,9 @@
     "issueNumber": 17,
     "issueTitle": "[CAFÉ] San Agustín Guji Uraga",
     "createdAt": "2025-10-04T00:24:29Z",
-    "updatedAt": "2025-10-06T16:13:39Z"
+    "updatedAt": "2025-10-06T16:33:53Z",
+    "state": "closed",
+    "current": false
   },
   {
     "name": "Friedhats",
@@ -810,7 +876,9 @@
     "issueNumber": 16,
     "issueTitle": "[CAFÉ] Friedhats",
     "createdAt": "2025-10-04T00:20:20Z",
-    "updatedAt": "2025-10-06T16:13:38Z"
+    "updatedAt": "2025-10-06T16:33:52Z",
+    "state": "closed",
+    "current": false
   },
   {
     "name": "Flor de San Juan",
@@ -833,7 +901,9 @@
     "issueNumber": 15,
     "issueTitle": "[CAFÉ] San Agustín Nicaragua",
     "createdAt": "2025-10-04T00:13:17Z",
-    "updatedAt": "2025-10-06T16:13:38Z"
+    "updatedAt": "2025-10-06T16:33:52Z",
+    "state": "closed",
+    "current": false
   },
   {
     "name": "Bujumbura",
@@ -857,7 +927,9 @@
     "issueNumber": 14,
     "issueTitle": "[CAFÉ] San Agustín",
     "createdAt": "2025-10-04T00:09:37Z",
-    "updatedAt": "2025-10-06T16:13:37Z"
+    "updatedAt": "2025-10-06T16:33:52Z",
+    "state": "closed",
+    "current": false
   },
   {
     "name": "Karambi",
@@ -881,7 +953,9 @@
     "issueNumber": 13,
     "issueTitle": "[CAFÉ] San Agustín Karambi",
     "createdAt": "2025-10-04T00:04:50Z",
-    "updatedAt": "2025-10-06T16:13:37Z"
+    "updatedAt": "2025-10-06T16:33:51Z",
+    "state": "closed",
+    "current": false
   },
   {
     "name": "Galicia",
@@ -904,7 +978,9 @@
     "issueNumber": 12,
     "issueTitle": "[CAFÉ] San Agustín Galicia",
     "createdAt": "2025-10-03T23:54:13Z",
-    "updatedAt": "2025-10-06T16:13:36Z"
+    "updatedAt": "2025-10-06T16:33:51Z",
+    "state": "closed",
+    "current": false
   },
   {
     "name": "Balcón de la Montaña",
@@ -928,7 +1004,9 @@
     "issueNumber": 11,
     "issueTitle": "[CAFÉ] Balcón de la Montaña",
     "createdAt": "2025-10-03T23:46:55Z",
-    "updatedAt": "2025-10-06T16:13:36Z"
+    "updatedAt": "2025-10-06T16:33:51Z",
+    "state": "closed",
+    "current": false
   },
   {
     "name": "Randall",
@@ -951,7 +1029,9 @@
     "issueNumber": 10,
     "issueTitle": "[CAFÉ] Randall kamina",
     "createdAt": "2025-10-03T23:40:30Z",
-    "updatedAt": "2025-10-06T16:13:36Z"
+    "updatedAt": "2025-10-06T16:33:50Z",
+    "state": "closed",
+    "current": false
   },
   {
     "name": "Randall",
@@ -974,7 +1054,9 @@
     "issueNumber": 9,
     "issueTitle": "[CAFÉ] Randall bombe",
     "createdAt": "2025-10-03T23:31:37Z",
-    "updatedAt": "2025-10-06T16:13:35Z"
+    "updatedAt": "2025-10-06T16:33:50Z",
+    "state": "closed",
+    "current": false
   },
   {
     "name": "La noria coffee project",
@@ -997,7 +1079,9 @@
     "issueNumber": 8,
     "issueTitle": "[CAFÉ] La noria coffee",
     "createdAt": "2025-10-03T23:13:52Z",
-    "updatedAt": "2025-10-06T16:13:35Z"
+    "updatedAt": "2025-10-06T16:33:50Z",
+    "state": "closed",
+    "current": false
   },
   {
     "name": "Villamaria",
@@ -1021,7 +1105,9 @@
     "issueNumber": 7,
     "issueTitle": "[CAFÉ] The fix Colombia Caldas",
     "createdAt": "2025-10-03T23:09:44Z",
-    "updatedAt": "2025-10-06T16:13:34Z"
+    "updatedAt": "2025-10-06T16:33:49Z",
+    "state": "closed",
+    "current": false
   },
   {
     "name": "Colombia La esmeralda",
@@ -1044,7 +1130,9 @@
     "issueNumber": 6,
     "issueTitle": "[CAFÉ] Osorio Colombia",
     "createdAt": "2025-10-03T22:57:29Z",
-    "updatedAt": "2025-10-06T16:13:34Z"
+    "updatedAt": "2025-10-06T16:33:49Z",
+    "state": "closed",
+    "current": false
   },
   {
     "name": "Paisano",
@@ -1067,6 +1155,8 @@
     "issueNumber": 5,
     "issueTitle": "[CAFÉ] Paisano Indonesia",
     "createdAt": "2025-10-03T22:34:34Z",
-    "updatedAt": "2025-10-06T16:13:34Z"
+    "updatedAt": "2025-10-06T16:33:48Z",
+    "state": "closed",
+    "current": false
   }
 ]
