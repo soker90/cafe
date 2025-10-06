@@ -1,5 +1,32 @@
 [
   {
+    "name": "Las Flores",
+    "origin": "Colombia",
+    "region": "Huila, Acebedo, San Isidro",
+    "roaster": "San Agustín",
+    "price": null,
+    "rating": null,
+    "purchaseDate": "2024-01-01",
+    "process": "Semi-lavado",
+    "variety": "Bourbon Rosado",
+    "altitude": 1750,
+    "flavorNotes": [
+      "Frutos rojos",
+      "Limón",
+      "Floral",
+      "Té",
+      "Yogurt de limón",
+      "Orégano",
+      "Especias"
+    ],
+    "packageImage": "https://github.com/user-attachments/assets/2847545a-dced-4f6a-af1e-6ca8d618cccc",
+    "notes": "Exótico, de buen cuerpo y acidez media/alta",
+    "issueNumber": 41,
+    "issueTitle": "[CAFÉ] San Agustín Las Flores",
+    "createdAt": "2025-10-06T07:31:00Z",
+    "updatedAt": "2025-10-06T07:31:00Z"
+  },
+  {
     "name": "Rio Ocho",
     "origin": "Guatemala",
     "region": "Rio Ocho - Santiago Chimaltenango",
