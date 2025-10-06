@@ -1,5 +1,28 @@
 [
   {
+    "name": "Rwanda",
+    "origin": "Ruanda",
+    "region": "Western-Nyanasgeje, Kivu-vilo",
+    "roaster": "Libis",
+    "price": null,
+    "rating": null,
+    "purchaseDate": "2025-01-01",
+    "process": "Lavado",
+    "variety": "Bourbon",
+    "altitude": null,
+    "flavorNotes": [
+      "Almendras",
+      "Grosella negra",
+      "Mandarina"
+    ],
+    "packageImage": "https://github.com/user-attachments/assets/ca3aa02e-509c-4931-b3e1-08892fef8a31",
+    "notes": null,
+    "issueNumber": 47,
+    "issueTitle": "[CAFÉ] Libis",
+    "createdAt": "2025-10-06T07:53:32Z",
+    "updatedAt": "2025-10-06T07:53:32Z"
+  },
+  {
     "name": "Espresso",
     "origin": "Méjico",
     "region": "Chiapas",
