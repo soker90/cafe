@@ -1,5 +1,26 @@
 [
   {
+    "name": "Farm",
+    "origin": "Colombia",
+    "region": null,
+    "roaster": "doubleshot",
+    "price": null,
+    "rating": null,
+    "purchaseDate": "2025-01-01",
+    "process": "Lavado",
+    "variety": "Arabica Caturra",
+    "altitude": null,
+    "flavorNotes": [
+      "Frutal"
+    ],
+    "packageImage": "https://github.com/user-attachments/assets/bec28d62-99aa-49ca-8bb1-4a2fe884a3fd",
+    "notes": null,
+    "issueNumber": 42,
+    "issueTitle": "[CAFÉ] Farm",
+    "createdAt": "2025-10-06T07:36:37Z",
+    "updatedAt": "2025-10-06T07:36:37Z"
+  },
+  {
     "name": "Las Flores",
     "origin": "Colombia",
     "region": "Huila, Acebedo, San Isidro",
