@@ -2,7 +2,7 @@ name: Generate Coffee Catalog
 
 on:
   issues:
-    types: [labeled, unlabeled, closed, reopened]
+    types: [labeled, unlabeled, reopened]
 
 permissions:
   contents: write
