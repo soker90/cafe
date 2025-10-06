@@ -502,7 +502,7 @@
     "name": "O.ElSalvador",
     "origin": "El salvador",
     "region": "Apaneca - llamatepec",
-    "roaster": "1000 Cups",
+    "roaster": "1000 cups",
     "price": null,
     "rating": null,
     "purchaseDate": "2024-01-01",
@@ -520,7 +520,7 @@
     "issueNumber": 28,
     "issueTitle": "[CAFÉ] 1000 Cups El Salvador",
     "createdAt": "2025-10-04T11:02:34Z",
-    "updatedAt": "2025-10-04T11:02:34Z"
+    "updatedAt": "2025-10-06T08:02:27Z"
   },
   {
     "name": "Las Estrellas",
