@@ -1,5 +1,31 @@
 [
   {
+    "name": "Rio Ocho",
+    "origin": "Guatemala",
+    "region": "Rio Ocho - Santiago Chimaltenango",
+    "roaster": "San Agustín",
+    "price": null,
+    "rating": null,
+    "purchaseDate": "2024-01-01",
+    "process": "Natural",
+    "variety": "Catuaí - Caturra - Pacha - Bourbon",
+    "altitude": 1815,
+    "flavorNotes": [
+      "Chocolate",
+      "Fruta tropical",
+      "Naranaja",
+      "Caramelo",
+      "Fruta de hueso",
+      "Cítricos"
+    ],
+    "packageImage": "https://github.com/user-attachments/assets/ba7fab65-3d5f-4461-9df0-47d103abaa36",
+    "notes": "Café afrutado sobre una base de chocolate. Notas de fruta tropical, naranja y caramelo, con un troque sutil de fruta de hueso y cítricos. Dulce, de cuerpo sólido y acidez equilibrada.",
+    "issueNumber": 40,
+    "issueTitle": "[CAFÉ] San Agustín Rio Ocho",
+    "createdAt": "2025-10-06T07:27:37Z",
+    "updatedAt": "2025-10-06T07:27:37Z"
+  },
+  {
     "name": "Lorayne",
     "origin": "Panamá",
     "region": "Chiriquí",
