@@ -1,5 +1,29 @@
 [
   {
+    "name": "La Cabaña",
+    "origin": "Colombia",
+    "region": "Bruselas - Pitalito",
+    "roaster": "San Agustín",
+    "price": null,
+    "rating": null,
+    "purchaseDate": "2024-01-01",
+    "process": "Natural",
+    "variety": "Pink Bourbon",
+    "altitude": 1700,
+    "flavorNotes": [
+      "Mango",
+      "Cítrico",
+      "Floral",
+      "Especiado"
+    ],
+    "packageImage": "https://github.com/user-attachments/assets/3adba28d-aa8a-447e-b134-12f0d4daf5d6",
+    "notes": "Destaca por su fragancia enzimática y frutal, con notas tropical que recuerdan al mango. Presenta un carácter cítrico, acompañado de notas florales y un toque especiado; es un café dulce, exótico, superintenso, con cuerpo y alta acidez",
+    "issueNumber": 37,
+    "issueTitle": "[CAFÉ] San Agustín La Cabaña",
+    "createdAt": "2025-10-06T07:08:41Z",
+    "updatedAt": "2025-10-06T07:08:41Z"
+  },
+  {
     "name": "Lalesa",
     "origin": "Etiopía",
     "region": "Gedeb - Lalesa",
