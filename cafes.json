@@ -1,5 +1,29 @@
 [
   {
+    "name": "Lorayne",
+    "origin": "Panamá",
+    "region": "Chiriquí",
+    "roaster": "San Agustín",
+    "price": null,
+    "rating": null,
+    "purchaseDate": "2024-01-01",
+    "process": "Natural",
+    "variety": "Pacamara",
+    "altitude": 1700,
+    "flavorNotes": [
+      "Chocolate",
+      "Fruta madura",
+      "Frutos rojos",
+      "Litchi"
+    ],
+    "packageImage": "https://github.com/user-attachments/assets/d2d7d669-d5c1-4aff-bd64-0b34bea8da2b",
+    "notes": "Un café con fragancia frutal enzimática y base de chocolate. Destacan notas de fruta madura, frutos rojos y litchi. Dulce, redondo y afrutado, con buen cuerpo y una acidez media-alta",
+    "issueNumber": 39,
+    "issueTitle": "[CAFÉ] San Agustín Lorayne",
+    "createdAt": "2025-10-06T07:24:19Z",
+    "updatedAt": "2025-10-06T07:24:19Z"
+  },
+  {
     "name": "Pergamino",
     "origin": "Colombia",
     "region": "Inzá - Agua Blanca",
