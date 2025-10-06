@@ -1,5 +1,28 @@
 [
   {
+    "name": "El salvador",
+    "origin": "El salvador",
+    "region": "Volvano",
+    "roaster": "Gota",
+    "price": null,
+    "rating": null,
+    "purchaseDate": "2025-01-01",
+    "process": "Honey",
+    "variety": "Bourbon",
+    "altitude": 1200,
+    "flavorNotes": [
+      "Ciruela pasa",
+      "Nuez",
+      "Chocolate con leche"
+    ],
+    "packageImage": "https://github.com/user-attachments/assets/cadf7c5d-2206-4dc4-b79c-4118ffb121ff",
+    "notes": null,
+    "issueNumber": 45,
+    "issueTitle": "[CAFÉ] Gota El salvador",
+    "createdAt": "2025-10-06T07:47:39Z",
+    "updatedAt": "2025-10-06T07:47:39Z"
+  },
+  {
     "name": "Etiopía",
     "origin": "Etiopía",
     "region": "Limu - Gera",
