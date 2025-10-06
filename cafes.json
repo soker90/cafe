@@ -1,5 +1,30 @@
 [
   {
+    "name": "Etiopía",
+    "origin": "Etiopía",
+    "region": "Limu - Gera",
+    "roaster": "Talento",
+    "price": null,
+    "rating": null,
+    "purchaseDate": "2025-01-01",
+    "process": "Lavado",
+    "variety": "Heirloom",
+    "altitude": 1900,
+    "flavorNotes": [
+      "Frutal",
+      "Chocolate",
+      "Floral",
+      "Frutos rojos",
+      "Cítricos"
+    ],
+    "packageImage": "https://github.com/user-attachments/assets/9830fdd5-6121-4e31-b321-d9c789767124",
+    "notes": null,
+    "issueNumber": 44,
+    "issueTitle": "[CAFÉ] Talento Etiopía",
+    "createdAt": "2025-10-06T07:43:40Z",
+    "updatedAt": "2025-10-06T07:43:40Z"
+  },
+  {
     "name": "Extra",
     "origin": "Bolivia",
     "region": null,
