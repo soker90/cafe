@@ -2,7 +2,7 @@ name: Generate Coffee Catalog
 
 on:
   issues:
-    types: [labeled, unlabeled, reopened]
+    types: [opened, edited, labeled, unlabeled, reopened, closed]
 
 permissions:
   contents: write
@@ -103,16 +103,16 @@ jobs:
               console.log(`Processing issue #${context.payload.issue.number}: ${context.payload.issue.title}`);
             }
             
-            // Obtener todos los issues abiertos con label 'cafe'
+            // Obtener todos los issues (abiertos y cerrados) con label 'cafe'
             const { data: issues } = await github.rest.issues.listForRepo({
               owner: context.repo.owner,
               repo: context.repo.repo,
               labels: 'cafe',
-              state: 'open',
+              state: 'all',
               per_page: 100
             });
             
-            console.log(`Found ${issues.length} coffee issues`);
+            console.log(`Found ${issues.length} coffee issues (including closed)`);
             
             // Convertir issues a cafés
             const coffees = issues.map(issue => {
@@ -122,6 +122,7 @@ jobs:
               coffee.issueTitle = issue.title;
               coffee.createdAt = issue.created_at;
               coffee.updatedAt = issue.updated_at;
+              coffee.state = issue.state; // open | closed
               
               // Si no hay nombre, usar el título del issue
               if (!coffee.name) {
@@ -161,13 +162,13 @@ jobs:
         if git diff --staged --quiet; then
           echo "No changes to commit to cafes.json"
         else
-          COMMIT_MSG="Update coffee catalog from issues"
+            COMMIT_MSG="Update coffee catalog from issues"
           if [ "${{ github.event.action }}" = "opened" ]; then
             COMMIT_MSG="Add new coffee: ${{ github.event.issue.title }} (Issue #${{ github.event.issue.number }})"
           elif [ "${{ github.event.action }}" = "edited" ]; then
             COMMIT_MSG="Update coffee: ${{ github.event.issue.title }} (Issue #${{ github.event.issue.number }})"
           elif [ "${{ github.event.action }}" = "closed" ]; then
-            COMMIT_MSG="Remove coffee: ${{ github.event.issue.title }} (Issue #${{ github.event.issue.number }})"
+            COMMIT_MSG="Close coffee (kept in catalog): ${{ github.event.issue.title }} (Issue #${{ github.event.issue.number }})"
           elif [ "${{ github.event.action }}" = "unlabeled" ]; then
             COMMIT_MSG="Remove coffee from catalog (Issue #${{ github.event.issue.number }})"
           fi
