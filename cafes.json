@@ -1,5 +1,28 @@
 [
   {
+    "name": "Espresso",
+    "origin": "Méjico",
+    "region": "Chiapas",
+    "roaster": "Right Side",
+    "price": null,
+    "rating": null,
+    "purchaseDate": "2025-01-01",
+    "process": "Otro",
+    "variety": "Typica",
+    "altitude": null,
+    "flavorNotes": [
+      "Chocolate con leche",
+      "Malta",
+      "Caramelo"
+    ],
+    "packageImage": "https://github.com/user-attachments/assets/aa74a235-c174-4499-8677-eaef705ed205",
+    "notes": "Proceso: Descafeinado",
+    "issueNumber": 46,
+    "issueTitle": "[CAFÉ] Right Side Descafeinado",
+    "createdAt": "2025-10-06T07:50:13Z",
+    "updatedAt": "2025-10-06T07:50:13Z"
+  },
+  {
     "name": "El salvador",
     "origin": "El salvador",
     "region": "Volvano",
