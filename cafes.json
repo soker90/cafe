@@ -1,5 +1,34 @@
 [
   {
+    "name": "Oromia",
+    "origin": "Etiopía",
+    "region": "Oromia - Guji",
+    "roaster": "San Agustín",
+    "price": 14,
+    "rating": 3,
+    "purchaseDate": null,
+    "process": "Lavado",
+    "variety": "Heirloom",
+    "altitude": 1711,
+    "flavorNotes": [
+      "Frutal",
+      "Flor de café",
+      "Miel",
+      "Albaricoque",
+      "Limón",
+      "Panela",
+      "Mantequilla"
+    ],
+    "packageImage": "https://github.com/user-attachments/assets/c156d658-1d3a-4594-bf82-7da888c21cb9",
+    "notes": "Fragancia frutal enzimática, con notas de flor de café, miel, albaricoque y un fondo de limón, panela y mantequilla. Café equilibrado, sedoso y de acidez media-alta. Final floral y dulce.",
+    "issueNumber": 50,
+    "issueTitle": "[CAFÉ] San Agustín Oromia",
+    "createdAt": "2025-10-07T08:07:06Z",
+    "updatedAt": "2025-10-07T08:07:06Z",
+    "state": "open",
+    "current": true
+  },
+  {
     "name": "Alquimia café",
     "origin": "Colombia",
     "region": null,
