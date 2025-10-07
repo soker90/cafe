@@ -6,7 +6,7 @@
     "roaster": "San Agustín",
     "price": 14,
     "rating": 3,
-    "purchaseDate": null,
+    "purchaseDate": "2025-10-07",
     "process": "Lavado",
     "variety": "Heirloom",
     "altitude": 1711,
@@ -24,7 +24,7 @@
     "issueNumber": 50,
     "issueTitle": "[CAFÉ] San Agustín Oromia",
     "createdAt": "2025-10-07T08:07:06Z",
-    "updatedAt": "2025-10-07T08:07:06Z",
+    "updatedAt": "2025-10-07T08:12:26Z",
     "state": "open",
     "current": true
   },
