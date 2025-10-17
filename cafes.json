@@ -1,5 +1,31 @@
 [
   {
+    "name": "Kenya",
+    "origin": "Kenia",
+    "region": "Kenia central / Mt. Kenia",
+    "roaster": "Quiero Coffee",
+    "price": 14.5,
+    "rating": 3,
+    "purchaseDate": "2024-10-17",
+    "process": "Lavado",
+    "variety": "Ruiru y batian",
+    "altitude": 1700,
+    "flavorNotes": [
+      "Frutos rojos con miel",
+      "Frutal",
+      "Azúcar moreno",
+      "Vainilla"
+    ],
+    "packageImage": "https://github.com/user-attachments/assets/da9e0993-5159-4d16-92c7-86acacb3799a",
+    "notes": "Café con fragancia enzimática frutal, base de azúcar moreno y vainilla, notas a rooibos de frutos rojos con miel; es dulce, acaramelado, equilibrado, con cuerpo espeso, y acidez media alta",
+    "issueNumber": 51,
+    "issueTitle": "[CAFÉ] Quiero coffee Kenya",
+    "createdAt": "2025-10-17T09:46:23Z",
+    "updatedAt": "2025-10-17T09:46:23Z",
+    "state": "open",
+    "current": true
+  },
+  {
     "name": "Oromia",
     "origin": "Etiopía",
     "region": "Oromia - Guji",
