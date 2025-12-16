@@ -6,7 +6,7 @@
     "roaster": "Quiero Coffee",
     "price": 14.5,
     "rating": 3,
-    "purchaseDate": "2024-10-17",
+    "purchaseDate": "2025-10-17",
     "process": "Lavado",
     "variety": "Ruiru y batian",
     "altitude": 1700,
@@ -21,7 +21,7 @@
     "issueNumber": 51,
     "issueTitle": "[CAFÉ] Quiero coffee Kenya",
     "createdAt": "2025-10-17T09:46:23Z",
-    "updatedAt": "2025-10-17T09:48:06Z",
+    "updatedAt": "2025-12-16T16:34:35Z",
     "state": "open",
     "current": true
   },
