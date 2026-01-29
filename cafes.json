@@ -11,14 +11,15 @@
     "variety": "Kent, Bourbon",
     "altitude": 1500,
     "flavorNotes": [
-      "sabor afrutado con matices de fruta tropical"
+      "Afrutado",
+      "Fruta tropical"
     ],
     "packageImage": "https://github.com/user-attachments/assets/94c5f126-615c-4307-a55b-daf80e005458",
     "notes": null,
     "issueNumber": 52,
     "issueTitle": "[CAFÉ] Fanático Tanzania",
     "createdAt": "2026-01-29T09:44:51Z",
-    "updatedAt": "2026-01-29T09:44:51Z",
+    "updatedAt": "2026-01-29T09:46:59Z",
     "state": "open",
     "current": true
   },
