@@ -1,5 +1,28 @@
 [
   {
+    "name": "Fanático Tanzania",
+    "origin": "Tanzania",
+    "region": "Kigoma",
+    "roaster": "Cafes La Mexicana",
+    "price": 8.8,
+    "rating": 4,
+    "purchaseDate": "2026-01-27",
+    "process": "Lavado",
+    "variety": "Kent, Bourbon",
+    "altitude": 1500,
+    "flavorNotes": [
+      "sabor afrutado con matices de fruta tropical"
+    ],
+    "packageImage": "https://github.com/user-attachments/assets/94c5f126-615c-4307-a55b-daf80e005458",
+    "notes": null,
+    "issueNumber": 52,
+    "issueTitle": "[CAFÉ] Fanático Tanzania",
+    "createdAt": "2026-01-29T09:44:51Z",
+    "updatedAt": "2026-01-29T09:44:51Z",
+    "state": "open",
+    "current": true
+  },
+  {
     "name": "Kenya",
     "origin": "Kenia",
     "region": "Kenia central / Mt. Kenia",
