@@ -1,5 +1,26 @@
 [
   {
+    "name": "1890",
+    "origin": "Colombia, Tanzania, Zambia",
+    "region": null,
+    "roaster": "La Mexicana",
+    "price": 7.2,
+    "rating": 3,
+    "purchaseDate": "2026-02-18",
+    "process": "Lavado",
+    "variety": "Arábica",
+    "altitude": null,
+    "flavorNotes": [],
+    "packageImage": "https://github.com/user-attachments/assets/e629f22d-e3c4-4a8c-af70-9612a6c0f288",
+    "notes": null,
+    "issueNumber": 53,
+    "issueTitle": "[CAFÉ] La Mexicana 1890",
+    "createdAt": "2026-02-23T17:05:43Z",
+    "updatedAt": "2026-02-23T17:05:43Z",
+    "state": "open",
+    "current": true
+  },
+  {
     "name": "Fanático Tanzania",
     "origin": "Tanzania",
     "region": "Kigoma",
