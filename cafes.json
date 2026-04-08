@@ -7,7 +7,7 @@
     "price": 26,
     "rating": 4,
     "purchaseDate": "2026-03-10",
-    "process": "Anaeróbico",
+    "process": "Lavado Anaeróbico",
     "variety": "Bourbon",
     "altitude": 1300,
     "flavorNotes": [
@@ -21,7 +21,7 @@
     "issueNumber": 54,
     "issueTitle": "[CAFÉ] Paisano Perú",
     "createdAt": "2026-04-08T08:16:15Z",
-    "updatedAt": "2026-04-08T08:16:15Z",
+    "updatedAt": "2026-04-08T08:16:40Z",
     "state": "open",
     "current": true
   },
@@ -92,9 +92,9 @@
     "issueNumber": 51,
     "issueTitle": "[CAFÉ] Quiero coffee Kenya",
     "createdAt": "2025-10-17T09:46:23Z",
-    "updatedAt": "2025-12-16T16:34:35Z",
-    "state": "open",
-    "current": true
+    "updatedAt": "2026-04-08T08:16:51Z",
+    "state": "closed",
+    "current": false
   },
   {
     "name": "Oromia",
