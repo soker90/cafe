@@ -1,5 +1,31 @@
 [
   {
+    "name": "Paisano Perú",
+    "origin": "Perú",
+    "region": "Cusco",
+    "roaster": "Paisano",
+    "price": 26,
+    "rating": 4,
+    "purchaseDate": "2026-03-10",
+    "process": "Anaeróbico",
+    "variety": "Bourbon",
+    "altitude": 1300,
+    "flavorNotes": [
+      "Fresa",
+      "Cereza",
+      "Vinoso",
+      "Chocolate Negro"
+    ],
+    "packageImage": "https://github.com/user-attachments/assets/df48711d-a027-4fd7-b85d-76dcff44d502",
+    "notes": null,
+    "issueNumber": 54,
+    "issueTitle": "[CAFÉ] Paisano Perú",
+    "createdAt": "2026-04-08T08:16:15Z",
+    "updatedAt": "2026-04-08T08:16:15Z",
+    "state": "open",
+    "current": true
+  },
+  {
     "name": "1890",
     "origin": "Colombia, Tanzania, Zambia",
     "region": null,
