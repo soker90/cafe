@@ -90,6 +90,7 @@ body:
         - "Semi-lavado"
         - "Anaeróbico"
         - "Natural Anaeróbico"
+        - "Lavado Anaeróbico"
         - "Otro"
     validations:
       required: false
