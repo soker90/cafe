@@ -218,12 +218,18 @@
             z-index: 1;
         }
         .coffee-image-wrap img {
-            opacity: 0;
-            transition: opacity 0.3s ease;
+            opacity: 1;
+            transition: filter 0.4s ease, transform 0.4s ease;
             position: relative;
             z-index: 2;
+            filter: blur(12px);
+            transform: scale(1.05);
+            will-change: filter, transform;
         }
-        .coffee-image-wrap img.loaded { opacity: 1; }
+        .coffee-image-wrap img.loaded {
+            filter: none;
+            transform: scale(1);
+        }
 
         /* Pagination */
         .pagination {
@@ -473,10 +479,16 @@
                 entries.forEach(function(entry) {
                     if (!entry.isIntersecting) return;
                     var img = entry.target;
-                    var src = img.dataset.src;
-                    if (!src) return;
-                    img.src = src;
-                    img.removeAttribute('data-src');
+                    if (!img.dataset.src) return;
+                    /* Load full-res; swap src once loaded */
+                    var fullSrc = img.dataset.src;
+                    var tmp = new Image();
+                    tmp.onload = function() {
+                        img.src = fullSrc;
+                        img.removeAttribute('data-src');
+                        requestAnimationFrame(function() { img.classList.add('loaded'); });
+                    };
+                    tmp.src = fullSrc;
                     imgObserver.unobserve(img);
                 });
               }, { rootMargin: '200px' })
@@ -484,26 +496,23 @@
 
         function setupLazyImages() {
             document.querySelectorAll('.coffee-image-wrap img[data-src]').forEach(function(img) {
-                img.addEventListener('load', function() {
-                    img.classList.add('loaded');
-                    /* remove skeleton overlay div (previousElementSibling) */
-                    var skel = img.previousElementSibling;
-                    if (skel && skel.classList.contains('skeleton')) skel.remove();
-                });
+                /* When the full-res image loads, swap src and remove blur */
+                function onFullLoad() {
+                    img.src = img.dataset.src;
+                    img.removeAttribute('data-src');
+                    /* Use rAF so the browser has painted the new src before adding .loaded */
+                    requestAnimationFrame(function() { img.classList.add('loaded'); });
+                }
                 img.addEventListener('error', function() {
                     img.parentElement.innerHTML = '<div class="coffee-placeholder"><span class="coffee-placeholder-icon">&#9749;</span><span>Sin foto</span></div>';
                 });
                 if (imgObserver) {
+                    /* Observer will fire onFullLoad once in viewport */
+                    img._onFullLoad = onFullLoad;
                     imgObserver.observe(img);
                 } else {
-                    img.src = img.dataset.src;
-                    img.removeAttribute('data-src');
+                    onFullLoad();
                 }
-            });
-            /* images already loaded (no data-src) */
-            document.querySelectorAll('.coffee-image-wrap img:not([data-src])').forEach(function(img) {
-                if (img.complete) img.classList.add('loaded');
-                else img.addEventListener('load', function() { img.classList.add('loaded'); });
             });
         }
 
@@ -708,8 +717,9 @@
                 var isCurrent = c.state==='open' || c.current===true;
                 var imgSrc    = c.packageImage || c.image;
                 var imgSrcOpt = imgSrc ? resizeImg(imgSrc, 600) : null;
+                var imgSrcTiny = imgSrc ? resizeImg(imgSrc, 20) : null;
                 var imgH = imgSrcOpt
-                    ? '<div class="skeleton skeleton-img" aria-hidden="true"></div><img data-src="'+esc(imgSrcOpt)+'" alt="'+esc(c.name)+'">'
+                    ? '<img src="'+esc(imgSrcTiny)+'" data-src="'+esc(imgSrcOpt)+'" alt="'+esc(c.name)+'">'
                     : '<div class="coffee-placeholder"><span class="coffee-placeholder-icon">&#9749;</span><span>Sin foto</span></div>';
                 var tags = [
                     c.origin ? '<span class="tag tag-origin">&#127757; '+esc(c.origin)+'</span>' : '',
