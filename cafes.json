@@ -1,5 +1,31 @@
 [
   {
+    "name": "Paisano Indonesia",
+    "origin": "Indonesia",
+    "region": "Kerinci Valley",
+    "roaster": "Paisano",
+    "price": 35,
+    "rating": 4,
+    "purchaseDate": "2026-07-01",
+    "process": "Natural",
+    "variety": "Typica",
+    "altitude": 1200,
+    "flavorNotes": [
+      "mora madura",
+      "caramelo",
+      "ciruela",
+      "chocolate con leche"
+    ],
+    "packageImage": null,
+    "notes": null,
+    "issueNumber": 55,
+    "issueTitle": "[CAFÉ] Paisano Indonesia",
+    "createdAt": "2026-08-17T09:36:31Z",
+    "updatedAt": "2026-08-17T09:36:31Z",
+    "state": "open",
+    "current": true
+  },
+  {
     "name": "Paisano Perú",
     "origin": "Perú",
     "region": "Cusco",
