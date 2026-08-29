@@ -1,5 +1,35 @@
 [
   {
+    "name": "Quiero Coffee Kenia",
+    "origin": "Kenia",
+    "region": "Nyeri",
+    "roaster": "Quiero Coffee",
+    "price": 15.5,
+    "rating": null,
+    "purchaseDate": "2026-08-29",
+    "process": "Lavado",
+    "variety": "SL28, SL34",
+    "altitude": 1650,
+    "flavorNotes": [
+      "Frutal",
+      "Chocolate",
+      "Miel",
+      "Frutos rojos",
+      "Complejo",
+      "Dulce",
+      "Buen cuerto",
+      "Acidez alta"
+    ],
+    "packageImage": null,
+    "notes": null,
+    "issueNumber": 56,
+    "issueTitle": "[CAFÉ] Quiero Coffee Kenia",
+    "createdAt": "2026-08-29T09:09:57Z",
+    "updatedAt": "2026-08-29T09:09:57Z",
+    "state": "open",
+    "current": true
+  },
+  {
     "name": "Paisano Indonesia",
     "origin": "Indonesia",
     "region": "Kerinci Valley",
