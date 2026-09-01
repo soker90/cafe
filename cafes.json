@@ -5,7 +5,7 @@
     "region": "Nyeri",
     "roaster": "Quiero Coffee",
     "price": 15.5,
-    "rating": null,
+    "rating": 4,
     "purchaseDate": "2026-08-29",
     "process": "Lavado",
     "variety": "SL28, SL34",
@@ -25,7 +25,7 @@
     "issueNumber": 56,
     "issueTitle": "[CAFÉ] Quiero Coffee Kenia",
     "createdAt": "2026-08-29T09:09:57Z",
-    "updatedAt": "2026-08-29T09:09:57Z",
+    "updatedAt": "2026-09-01T16:22:35Z",
     "state": "open",
     "current": true
   },
