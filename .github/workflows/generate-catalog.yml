@@ -89,12 +89,17 @@ jobs:
               }
             }
             
-            // Extraer imagen subida en el issue
-            const imagePattern = /!\[.*?\]\((https:\/\/[^)]+)\)/i;
-            const imageMatch = body.match(imagePattern);
-            if (imageMatch) {
-              coffee.packageImage = imageMatch[1];
-            }            return coffee;
+            // Extraer imagen subida en el issue (Markdown ![alt](url) o HTML <img src="...">)
+            const markdownImagePattern = /!\[.*?\]\((https:\/\/[^)]+)\)/i;
+            const htmlImagePattern = /<img[^>]*src=["'](https:\/\/[^"']+)["']/i;
+            const markdownMatch = body.match(markdownImagePattern);
+            const htmlMatch = body.match(htmlImagePattern);
+            if (markdownMatch) {
+              coffee.packageImage = markdownMatch[1];
+            } else if (htmlMatch) {
+              coffee.packageImage = htmlMatch[1];
+            }
+            return coffee;
           }
           
           try {
